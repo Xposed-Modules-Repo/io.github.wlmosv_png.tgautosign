@@ -38,6 +38,11 @@
 
 ---
 
+## ⚠️ 当前状态说明
+
+- **JMB 界面版（推荐）**：以 LSPilot 插件形态发布，在 Telegram 内发 `/jmb` 管理，安装方式与源码见 [wlmosv-png/TGAutoSign](https://github.com/wlmosv-png/TGAutoSign)
+- **APK 模块版**：实验性，跨进程通信方案仍在迭代，暂不推荐日常使用
+
 ## 📲 安装
 
 1. 需要 **LSPosed / Vector**（API ≥ 102）环境，且设备已 Root
