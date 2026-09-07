@@ -11,7 +11,7 @@
 [![API](https://img.shields.io/badge/libxposed-API%20102-8A2BE2?style=flat-square)](https://github.com/LSPosed/LSPlant)
 [![License](https://img.shields.io/badge/license-GPLv3-green?style=flat-square)](LICENSE)
 
-作者：**wlmosv**
+作者：**wlmosv** · [源码仓库](https://github.com/wlmosv-png/TGAutoSign)
 
 </div>
 
