@@ -2,11 +2,7 @@
 
 # TGAutoSign · Telegram 自动签到
 
-TGAutoSign 是一个 LSPosed 模块：每天自动向指定的 Telegram bot 发送签到指令，或重放签到按钮的回调；支持官方 Play 版、官网直连版与 Telegram-Android 系第三方客户端，全部管理操作在客户端内发送 /jmb 完成。
-
-**Telegram 每日自动签到 Xposed 模块** · *Telegram auto check-in module for LSPosed / libxposed*
-
-发 `/jmb` 管理一切：自动学习签到目标、每日一签、断网自动补、内置更新与迁移。回调签到内置 **Live Panel 实时面板引擎**（v1.5.0），作用域自动申请开箱即用（v1.4.3+），支持官方版 / 官网直连版 / Nagram XF 等 Telegram-Android 系客户端。
+Telegram 每日自动签到 Xposed 模块：自动发送签到指令或重放回调按钮，断网自动补签，支持官方版 / 官网直连版 / Nagram XF 等多客户端，全部管理在客户端内发 `/jmb` 完成。
 
 [![Latest Release](https://img.shields.io/github/v/release/Xposed-Modules-Repo/io.github.wlmosv_png.tgautosign?label=%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC&color=blue)](https://github.com/Xposed-Modules-Repo/io.github.wlmosv_png.tgautosign/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/Xposed-Modules-Repo/io.github.wlmosv_png.tgautosign/total?label=%E4%B8%8B%E8%BD%BD%E9%87%8F&color=brightgreen)](https://github.com/Xposed-Modules-Repo/io.github.wlmosv_png.tgautosign/releases)
