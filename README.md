@@ -169,6 +169,11 @@ v1.5.0 起 `processUpdate*` 首参容器解包，面板采集与回复语义判�
 
 ## 📜 更新日志
 
+### v1.5.1 (114) —— 界面主题化 + 更新判定修复
+
+- 🎨 **终端风色板主题化**：日间模式 = 浅灰蓝卡片 + 深色文字 + 高对比描边，暗色配色逐像素不变；深浅色判定改为跟随 TG 主题开关（`isCurrentThemeDark`），不再依赖系统夜间模式
+- 🔧 修复「永远显示可更新」：`UpdateChecker.VERSION_CODE` 停在 112 与 113 不符导致永远判定有新版本，统一到 114 / 1.5.1（build.gradle / UpdateChecker / module.prop 三处一致 + 构建守卫）
+
 ### v1.5.0 (113) —— 回调签到协议层修复 + 实时面板引擎 + 终端风界面
 
 - 🔴 修复 `TL_messages_getBotCallbackAnswer` 缺 `flags` 位 → 全 bot 回调 `DATA_INVALID`（v1.3.1 起回调签到失效的根因，协议层修复）
