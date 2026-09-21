@@ -22,11 +22,13 @@
 
 ## 📱 界面一览
 
-| 主面板（暗色） | 主菜单（日间） |
+| 暗色 · 主面板 | 日间 · 主面板 |
 | --- | --- |
-| ![主面板](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/main-dark.jpg) | ![主菜单](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/main-light.jpg) |
+| ![主面板·暗色](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/main-dark.jpg) | ![主面板·日间](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/main-light.jpg) |
+| 暗色 · 主菜单 | 日间 · 主菜单 |
+| ![主菜单·暗色](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/menu-dark.jpg) | ![主菜单·日间](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/menu-light.jpg) |
 | 设置 | 目标过滤 |
-| ![设置](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/settings-dark.jpg) | ![目标过滤](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/filter-dark.jpg) |
+| ![设置](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/settings-light.jpg) | ![目标过滤](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/filter-light.jpg) |
 
 ---
 
