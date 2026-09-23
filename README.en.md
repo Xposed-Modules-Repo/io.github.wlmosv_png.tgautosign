@@ -15,8 +15,9 @@ The control panel lives inside Telegram: send `/jmb` in any chat.
 [![Downloads](https://img.shields.io/github/downloads/Xposed-Modules-Repo/io.github.wlmosv_png.tgautosign/total?label=downloads&color=brightgreen)](https://github.com/Xposed-Modules-Repo/io.github.wlmosv_png.tgautosign/releases/latest)
 [![API](https://img.shields.io/badge/libxposed-API%20102-8A2BE2)](https://github.com/LSPosed/LSPlant)
 [![License](https://img.shields.io/badge/license-GPLv3-green)](LICENSE)
+[![Telegram Group](https://img.shields.io/badge/Telegram-Join%20Group-26A5E4?logo=telegram&logoColor=white)](https://t.me/+V2Oyu8pSubs4ZjE0)
 
-**⬇️ [Download the latest APK](https://github.com/Xposed-Modules-Repo/io.github.wlmosv_png.tgautosign/releases/latest)** · [Source repo](https://github.com/wlmosv-png/TGAutoSign) · [Changelog](CHANGELOG.md)
+**⬇️ [Download the latest APK](https://github.com/Xposed-Modules-Repo/io.github.wlmosv_png.tgautosign/releases/latest)** · [Source repo](https://github.com/wlmosv-png/TGAutoSign) · [Changelog](https://github.com/wlmosv-png/TGAutoSign/blob/master/CHANGELOG.md)
 
 by **wlmosv** · if it's useful, [star the source repo ⭐](https://github.com/wlmosv-png/TGAutoSign)
 
@@ -129,7 +130,7 @@ You installed a debug build. Uninstall it, then install the official APK from th
 - **Readable targets** — custom notes and `@username` subtitles instead of bare numeric IDs
 - **Fix**: button learning on the official client and Nagram (structural matching instead of obfuscated names)
 
-[Full changelog →](CHANGELOG.md)
+[Full changelog →](https://github.com/wlmosv-png/TGAutoSign/blob/master/CHANGELOG.md)
 
 ---
 
