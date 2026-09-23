@@ -114,13 +114,25 @@ You installed a debug build. Uninstall it, then install the official APK from th
 
 ## 📜 Changelog
 
-### v1.5.8 (121) — 2026-09-23
+### v1.5.7 (120) — 2026-09-23
 
-**Fixed**: New installs couldn't learn from button taps (important) · Capture mode did nothing on Nagram \/ official · Deny reason was misreported · Stale account prefix in logs
+- **English UI** — built in, follows your system language; switchable in Settings
+- **Per-account isolation fix** — two accounts using the same bot no longer clash; new Accounts overview
+- **Progress bar never filled up** — frozen / blocked targets no longer count toward the total
+- **"Blocked bot" now actually stops signing** — previously it only blocked learning
+- **Frozen entries dim and sink** — same treatment as blocked bots
+- A batch of untranslated strings fixed (countdown, signature, diagnostics, dialog buttons, log filters)
 
-**Diagnostics**: Diagnostics now reports learning and hook state · Patch tag shown in the diagnostics header
+### v1.5.6 (119) — 2026-09-22
+
+- **Three-layer blocklist** — exclude rules · blocked bots · frozen targets, plus a dedicated management page
+- **Network-learn needs confirmation** — new hits wait in a pending pool
+- **Readable targets** — custom notes and `@username` subtitles instead of bare numeric IDs
+- **Fix**: button learning on the official client and Nagram (structural matching instead of obfuscated names)
 
 [Full changelog →](https://github.com/wlmosv-png/TGAutoSign/blob/master/CHANGELOG.md)
+
+---
 
 ## 🔗 Download
 
