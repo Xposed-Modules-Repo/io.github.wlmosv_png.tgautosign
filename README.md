@@ -58,15 +58,27 @@ Requires **libxposed API 102+** and a rooted device.
 
 ---
 
-## 📱 界面一览
+## 📱 Screenshots / 界面一览
 
-| 暗色 · 主面板 | 日间 · 主面板 |
+**English UI** — built in, no setup required
+**英文界面** — 内置，无需设置
+
+| Main panel | Main menu |
 | --- | --- |
-| ![主面板·暗色](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/main-dark.jpg) | ![主面板·日间](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/main-light.jpg) |
-| 暗色 · 主菜单 | 日间 · 主菜单 |
-| ![主菜单·暗色](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/menu-dark.jpg) | ![主菜单·日间](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/menu-light.jpg) |
-| 设置 | 目标过滤 |
-| ![设置](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/settings-light.jpg) | ![目标过滤](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/filter-light.jpg) |
+| ![Main panel](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/main-en-dark.jpg) | ![Main menu](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/menu-en-dark.jpg) |
+| Targets | Settings |
+| ![Targets](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/targets-en-dark.jpg) | ![Settings](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/settings-en-dark.jpg) |
+
+<details>
+<summary>中文界面（3 张）</summary>
+
+| 暗色 · 主面板 | 暗色 · 主菜单 |
+| --- | --- |
+| ![主面板·暗色](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/main-dark.jpg) | ![主菜单·暗色](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/menu-dark.jpg) |
+| 设置 | |
+| ![设置](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/settings-light.jpg) | |
+
+</details>
 
 ---
 
