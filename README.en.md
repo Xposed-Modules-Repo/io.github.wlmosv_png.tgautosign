@@ -129,10 +129,6 @@ You installed a debug build. Uninstall it, then install the official APK from th
 - **Readable targets** — custom notes and `@username` subtitles instead of bare numeric IDs
 - **Fix**: button learning on the official client and Nagram (structural matching instead of obfuscated names)
 
-### v1.5.5 (118) — 2026-09-20
-
-- Group / channel check-ins · Saved-Messages notifications · cross-client sync · make-up deadline · vector icons
-
 [Full changelog →](CHANGELOG.md)
 
 ---
