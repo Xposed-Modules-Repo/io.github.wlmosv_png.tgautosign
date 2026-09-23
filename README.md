@@ -159,7 +159,7 @@
 
 > 自 v1.5.6 起仅对 `org.telegram.messenger`、`xyz.nextalone.nagram`、`com.exteraless.app` 做主要维护。
 
-[完整更新日志 →](CHANGELOG.md)
+[完整更新日志 →](https://github.com/wlmosv-png/TGAutoSign/blob/master/CHANGELOG.md)
 
 ---
 
