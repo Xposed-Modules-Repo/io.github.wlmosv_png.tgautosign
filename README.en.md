@@ -114,6 +114,19 @@ You installed a debug build. Uninstall it, then install the official APK from th
 
 ## 📜 Changelog
 
+### v1.5.8 (121) — 2026-09-24
+
+**Fixed**: Panels turned light — fixed · Theme logging now records every change · "Unrecognized bot reply" is no longer an error · A single tap is no longer processed multiple times · i18n gate covers the whitelist gap; 18 missing translations fixed · The gate now catches "helper used, dictionary forgotten" · Heartbeat slows down when there is nothing to do · Scheduled tasks no longer pile up or get lost · Panel-refresh trigger no longer double-sends with the heartbeat · Bot names stuck as numeric IDs after the first attempt · Common "already signed today" phrasings are recognised now · "Not a check-in result" no longer reads like a failure · Auto-detection being off is no longer silent · New installs couldn't learn from button taps (important) · Capture mode did nothing on Nagram \/ official · Deny reason was misreported · Wrong account number shown (e.g. "account 10") · Stale account prefix in logs · Windows that cross midnight actually work now · Cross-client sync no longer mixes up accounts · Applying a synced config replans the timer · Pending window now matches the failure-undo window · Cross-client sync is throttled · Build checks the debug patch tag
+
+**New**: Verdict words became switches · New "loose mode" switch
+
+**Reliability**: Pure-logic unit tests, wired into the build gate · Unrecognized bot replies are no longer silent · Exceptions on critical paths are no longer swallowed
+
+**Diagnostics**: Diagnostics now reports learning and hook state · Patch tag shown in the diagnostics header · Diagnostics now shows the raw account field
+
+[Full changelog →](https://github.com/wlmosv-png/TGAutoSign/blob/master/CHANGELOG.md)
+
+
 ### v1.5.7 (120) — 2026-09-23
 
 - **English UI** — built in, follows your system language; switchable in Settings
