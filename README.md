@@ -2,9 +2,9 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/banner-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/banner-light.svg">
-    <img src="https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/banner-light.svg" alt="TGAutoSign" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/banner-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/banner-light.svg">
+    <img src="https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/banner-light.svg" alt="TGAutoSign" width="100%">
   </picture>
 </p>
 
@@ -77,9 +77,9 @@ sha256sum TGAutoSign-*.apk                     # 比对 Release 里的 sha256sum
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/hero-dark.png">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/hero-light.png">
-    <img src="https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/hero-light.png" alt="TGAutoSign 界面一览" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/hero-dark.png">
+    <source media="(prefers-color-scheme: light)" srcset="https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/hero-light.png">
+    <img src="https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/hero-light.png" alt="TGAutoSign 界面一览" width="100%">
   </picture>
 </p>
 
@@ -91,21 +91,21 @@ sha256sum TGAutoSign-*.apk                     # 比对 Release 里的 sha256sum
 
 | 主面板 | 目标列表 |
 | --- | --- |
-| ![主面板](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/shot-main-dark.png) | ![目标列表](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/shot-targets-dark.png) |
+| ![主面板](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-main-dark.png) | ![目标列表](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-targets-dark.png) |
 
 | 设置 | |
 | --- | --- |
-| ![设置](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/shot-settings-dark.png) | |
+| ![设置](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-settings-dark.png) | |
 
 ### 亮色 · Light
 
 | 主面板 | 目标列表 |
 | --- | --- |
-| ![主面板](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/shot-main-light.png) | ![目标列表](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/shot-targets-light.png) |
+| ![主面板](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-main-light.png) | ![目标列表](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-targets-light.png) |
 
 | 设置 | |
 | --- | --- |
-| ![设置](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/shot-settings-light.png) | |
+| ![设置](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-settings-light.png) | |
 
 ## ✨ 它能做什么 · What it does
 

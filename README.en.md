@@ -2,9 +2,9 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/banner-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/banner-light.svg">
-    <img src="https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/banner-light.svg" alt="TGAutoSign" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/banner-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/banner-light.svg">
+    <img src="https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/banner-light.svg" alt="TGAutoSign" width="100%">
   </picture>
 </p>
 
@@ -75,9 +75,9 @@ The fingerprint corresponds to the release key in use since September 2026; any 
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/hero-dark.png">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/hero-light.png">
-    <img src="https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/hero-light.png" alt="TGAutoSign UI overview" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/hero-dark.png">
+    <source media="(prefers-color-scheme: light)" srcset="https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/hero-light.png">
+    <img src="https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/hero-light.png" alt="TGAutoSign UI overview" width="100%">
   </picture>
 </p>
 
@@ -89,21 +89,21 @@ The fingerprint corresponds to the release key in use since September 2026; any 
 
 | Main panel | Targets |
 | --- | --- |
-| ![Main panel](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/shot-main-dark.png) | ![Targets](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/shot-targets-dark.png) |
+| ![Main panel](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-main-dark.png) | ![Targets](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-targets-dark.png) |
 
 | Settings | |
 | --- | --- |
-| ![Settings](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/shot-settings-dark.png) | |
+| ![Settings](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-settings-dark.png) | |
 
 ### Light
 
 | Main panel | Targets |
 | --- | --- |
-| ![Main panel](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/shot-main-light.png) | ![Targets](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/shot-targets-light.png) |
+| ![Main panel](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-main-light.png) | ![Targets](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-targets-light.png) |
 
 | Settings | |
 | --- | --- |
-| ![Settings](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/shot-settings-light.png) | |
+| ![Settings](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-settings-light.png) | |
 
 ## ✨ What it does
 
