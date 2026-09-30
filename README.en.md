@@ -23,17 +23,17 @@ The control panel lives inside Telegram: send `/jmb` in any chat.
 [![License](https://img.shields.io/badge/license-GPLv3-green)](LICENSE)
 [![Telegram Group](https://img.shields.io/badge/Telegram-Join%20Group-26A5E4?logo=telegram&logoColor=white)](https://t.me/+V2Oyu8pSubs4ZjE0)
 
-**⬇️ [Download the latest APK](https://github.com/Xposed-Modules-Repo/io.github.wlmosv_png.tgautosign/releases/latest)** · [Source repo](https://github.com/wlmosv-png/TGAutoSign)
+**[Download the latest APK](https://github.com/Xposed-Modules-Repo/io.github.wlmosv_png.tgautosign/releases/latest)** · [Source repo](https://github.com/wlmosv-png/TGAutoSign)
 
 <sub>Download only from these two sources. For repacked builds elsewhere, compare the fingerprint below.</sub> · [Changelog](https://github.com/wlmosv-png/TGAutoSign/blob/master/CHANGELOG.md)
 
-by **wlmosv** · if it's useful, [star the source repo ⭐](https://github.com/wlmosv-png/TGAutoSign)
+by **wlmosv** · if it's useful, [star the source repo](https://github.com/wlmosv-png/TGAutoSign)
 
 </div>
 
 ---
 
-### 🔐 Local by design
+### Local by design
 
 <sub>No account credentials, no official API, no data leaving your device.</sub>
 
@@ -71,7 +71,7 @@ The fingerprint corresponds to the release key in use since September 2026; any 
 
 ---
 
-## 📱 Screenshots
+## Screenshots
 
 <p align="center">
   <picture>
@@ -99,7 +99,7 @@ Each page shown in dark / light
 | --- | --- |
 | ![Settings·Dark](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-settings-dark.png) | ![Settings·Light](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-settings-light.png) |
 
-## ✨ What it does
+## What it does
 
 - **Tap once, it learns** — tap the bot's check-in button once and it replays daily, automatically. It keeps up even when the button's callback data changes.
 - **Text commands too** — set a bot ID plus a command (e.g. `/checkin`) and it sends on schedule.
@@ -115,7 +115,7 @@ Each page shown in dark / light
 
 ---
 
-## 🖥️ Supported clients
+## Supported clients
 
 The module matches by host package first, then falls back to flag-class capability — it only injects on a match.
 
@@ -140,7 +140,7 @@ Adapted for the whole Telegram **12.10.x** line, including 12.10.4.
 
 ---
 
-## 🚀 30-second setup
+## 30-second setup
 
 1. Install the APK → **LSPosed** → **Modules** → enable **TGAutoSign**
 2. Tick your Telegram client under **Scope**
@@ -151,7 +151,7 @@ Adapted for the whole Telegram **12.10.x** line, including 12.10.4.
 
 ---
 
-## ❓ FAQ
+## FAQ
 
 **Tapped the button but nothing was added**
 
@@ -179,7 +179,7 @@ You installed a debug build. Uninstall it, then install the official APK from th
 
 ---
 
-## 📜 更新日志 · Changelog
+## 更新日志 · Changelog
 
 ### v1.6.3 (129) — 2026-09-30
 
@@ -192,11 +192,11 @@ You installed a debug build. Uninstall it, then install the official APK from th
 **变更**: Execution-result classification replaces scattered verdict branches. · Pending actions moved to a top summary bar. · Entries can be told apart in the list and the log. · Button-nature filtering removed in favour of "learn whatever you tap". · Status wording returned to plain language.
 
 [Full changelog →](https://github.com/wlmosv-png/TGAutoSign/blob/master/CHANGELOG.md)
-## ⚖️ License
+## License
 
 Licensed under **GPLv3**. For personal use with your own accounts.
 Please respect Telegram's Terms of Service and each group's / bot's rules.
 
 ---
 
-<p align="center"><sub>Made by wlmosv · <a href="https://github.com/wlmosv-png/TGAutoSign">a ⭐ keeps it going</a></sub></p>
+<p align="center"><sub>Made by wlmosv · <a href="https://github.com/wlmosv-png/TGAutoSign">a star keeps it going</a></sub></p>

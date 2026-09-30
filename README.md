@@ -25,17 +25,17 @@
 [![License](https://img.shields.io/badge/license-GPLv3-green)](LICENSE)
 [![Telegram Group](https://img.shields.io/badge/Telegram-Join%20Group-26A5E4?logo=telegram&logoColor=white)](https://t.me/+V2Oyu8pSubs4ZjE0)
 
-**⬇️ [下载最新版 APK](https://github.com/Xposed-Modules-Repo/io.github.wlmosv_png.tgautosign/releases/latest)** · [源码仓库](https://github.com/wlmosv-png/TGAutoSign)
+**[下载最新版 APK](https://github.com/Xposed-Modules-Repo/io.github.wlmosv_png.tgautosign/releases/latest)** · [源码仓库](https://github.com/wlmosv-png/TGAutoSign)
 
 <sub>只从这两个地址下载。第三方站点的转载包请用下方指纹自行比对。</sub>
 
-作者 **wlmosv** · 好用的话 [给源码仓库点个 Star ⭐](https://github.com/wlmosv-png/TGAutoSign)
+作者 **wlmosv** · 好用的话 [给源码仓库点个 Star](https://github.com/wlmosv-png/TGAutoSign)
 
 </div>
 
 ---
 
-### 🔐 本地运行 · Local by design
+### 本地运行 · Local by design
 
 <sub>无需账号密码、不碰官方 API、数据全在设备上。</sub>
 
@@ -73,7 +73,7 @@ sha256sum TGAutoSign-*.apk                     # 比对 Release 里的 sha256sum
 
 ---
 
-## 📱 界面一览 · Screenshots
+## 界面一览 · Screenshots
 
 <p align="center">
   <picture>
@@ -101,24 +101,24 @@ sha256sum TGAutoSign-*.apk                     # 比对 Release 里的 sha256sum
 | --- | --- |
 | ![设置·暗色](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-settings-dark.png) | ![设置·亮色](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-settings-light.png) |
 
-## ✨ 它能做什么 · What it does
+## 它能做什么 · What it does
 
-| | 能力 · Capability | 说明 · Description |
-|---|---|---|
-| ⚡ | **点一次就学会** · **Tap once, it learns** | 在 bot 里点一下签到按钮，之后每天自动重放；按钮 data 变了也跟得上<br>*Tap the bot's button once and it replays daily — even when the callback data changes.* |
-| 📝 | **文本指令也行** · **Text commands too** | 填 bot ID + 指令（如 `/checkin`），到点自动发<br>*Set bot ID + command (e.g. `/checkin`); sent on schedule.* |
-| 👥 | **群 / 频道签到** · **Group & channel check-ins** | 群 ID 同样支持，回复判定按群内消息走<br>*Group IDs supported; replies are read from group messages.* |
-| 🕐 | **时间你说了算** · **Your schedule** | 签到窗口 · 每目标随机时刻 · 错开间隔 · 补签截止 · 暂停一周<br>*Window · per-target random slots · spacing · make-up deadline · pause a week.* |
-| 🛡️ | **不硬刚风控** · **Rate-limit friendly** | 失败退避 5m→15m→45m→2h→4h · 尊重 `FLOOD_WAIT` · 断网自动补签<br>*Backoff on failure · waits out `FLOOD_WAIT` · catches up when back online.* |
-| 🚫 | **不想签的挡得住** · **Block what you don't want** | 关键词 / 正则规则 · 整只 bot 排除 · 单个目标冻结<br>*Keyword / regex rules · block a whole bot · freeze a single target.* |
-| 👤 | **多账号互不干扰** · **Multi-account, isolated** | 目标与已签状态按账号隔离；可一键把目标复制到其它账号<br>*Targets and signed-state are per account; copy targets across accounts.* |
-| 🔔 | **每天一条摘要** · **Daily summary** | 发到自己的收藏夹，不弹系统通知；连续失败 3 天额外告警<br>*One message to your Saved Messages; alert after 3 failing days.* |
-| 🌍 | **中英双语界面** · **Bilingual UI** | 英文设备装上即英文；设置里可手动切换<br>*English out of the box on English devices; switchable in Settings.* |
-| 🔒 | **数据全在本地** · **Local by design** | 仅更新检查联网，可关闭<br>*Only the update check goes online — and it can be turned off.* |
+| 能力 · Capability | 说明 · Description |
+| --- | --- |
+| **点一次就学会** · **Tap once, it learns** | 在 bot 里点一下签到按钮，之后每天自动重放；按钮 data 变了也跟得上<br>*Tap the bot's button once and it replays daily — even when the callback data changes.* |
+| **文本指令也行** · **Text commands too** | 填 bot ID + 指令（如 `/checkin`），到点自动发<br>*Set bot ID + command (e.g. `/checkin`); sent on schedule.* |
+| **群 / 频道签到** · **Group & channel check-ins** | 群 ID 同样支持，回复判定按群内消息走<br>*Group IDs supported; replies are read from group messages.* |
+| **时间你说了算** · **Your schedule** | 签到窗口 · 每目标随机时刻 · 错开间隔 · 补签截止 · 暂停一周<br>*Window · per-target random slots · spacing · make-up deadline · pause a week.* |
+| **不硬刚风控** · **Rate-limit friendly** | 失败退避 5m→15m→45m→2h→4h · 尊重 `FLOOD_WAIT` · 断网自动补签<br>*Backoff on failure · waits out `FLOOD_WAIT` · catches up when back online.* |
+| **不想签的挡得住** · **Block what you don't want** | 关键词 / 正则规则 · 整只 bot 排除 · 单个目标冻结<br>*Keyword / regex rules · block a whole bot · freeze a single target.* |
+| **多账号互不干扰** · **Multi-account, isolated** | 目标与已签状态按账号隔离；可一键把目标复制到其它账号<br>*Targets and signed-state are per account; copy targets across accounts.* |
+| **每天一条摘要** · **Daily summary** | 发到自己的收藏夹，不弹系统通知；连续失败 3 天额外告警<br>*One message to your Saved Messages; alert after 3 failing days.* |
+| **中英双语界面** · **Bilingual UI** | 英文设备装上即英文；设置里可手动切换<br>*English out of the box on English devices; switchable in Settings.* |
+| **数据全在本地** · **Local by design** | 仅更新检查联网，可关闭<br>*Only the update check goes online — and it can be turned off.* |
 
 ---
 
-## 🖥️ 支持的客户端 · Supported clients
+## 支持的客户端 · Supported clients
 
 模块先按宿主包名判定，再按标志类能力兜底，命中才注入。
 
@@ -143,7 +143,7 @@ sha256sum TGAutoSign-*.apk                     # 比对 Release 里的 sha256sum
 
 ---
 
-## 🚀 30 秒上手 · 30-second setup
+## 30 秒上手 · 30-second setup
 
 | 步骤 · Step | 做什么 · Do this |
 | --- | --- |
@@ -157,7 +157,7 @@ sha256sum TGAutoSign-*.apk                     # 比对 Release 里的 sha256sum
 
 ---
 
-## ❓ 常见问题 · FAQ
+## 常见问题 · FAQ
 
 **Q：点了按钮没有添加 / Tapped the button but nothing was added**
 
@@ -197,7 +197,7 @@ sha256sum TGAutoSign-*.apk                     # 比对 Release 里的 sha256sum
 
 ---
 
-## 📜 更新日志 · Changelog
+## 更新日志 · Changelog
 
 ### v1.6.3 (129) — 2026-09-30
 
@@ -212,7 +212,7 @@ sha256sum TGAutoSign-*.apk                     # 比对 Release 里的 sha256sum
 **新增**：已签目标绿色呼吸闪烁动画 · 「指令已发」状态与「已签」同绿色 · 待处理面板显示时间戳 + 条目内容 · 待添加候选面板卡片化 · typeChip 矢量图标（回调箭头/终端符）
 
 [完整更新日志 →](https://github.com/wlmosv-png/TGAutoSign/blob/master/CHANGELOG.md)
-## ⚖️ 许可 · License
+## 许可 · License
 
 基于 **GPLv3** 开源，仅供个人学习与自有账号使用。
 请遵守 Telegram 服务条款及各群组 / 机器人规则。
@@ -222,4 +222,4 @@ Please respect Telegram's Terms of Service and each group's / bot's rules.*
 
 ---
 
-<p align="center"><sub>Made by wlmosv · <a href="https://github.com/wlmosv-png/TGAutoSign">点个 Star ⭐ 是持续更新的动力</a></sub></p>
+<p align="center"><sub>Made by wlmosv · <a href="https://github.com/wlmosv-png/TGAutoSign">点个 Star 是持续更新的动力</a></sub></p>
