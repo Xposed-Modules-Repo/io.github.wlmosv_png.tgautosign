@@ -181,15 +181,19 @@ You installed a debug build. Uninstall it, then install the official APK from th
 
 ## 更新日志 · Changelog
 
-### v1.6.3 (129) — 2026-09-30
-
-**New**: A built-in exporter renders the main panel, target list and settings to PNG in both themes… · The pages are drawn off-screen as ordinary views instead of being captured from the screen…
-
 ### v1.6.2 (128) — 2026-09-29
 
 **Fixed**: Symptom: targets whose button could not be tapped, and where the bot merely replied with a greeting… · Text commands were recorded as signed immediately, after which the bot's refusals were ignored. · Wrong attribution of expired buttons caused permanent retry abandonment. · Manual retry did not clear the expiry counter, so retries were quickly consumed. · The classification code collided with an existing field, losing the classification. · The fallback path did not record a classification, leaving the UI and log on the old state. · Replies matching no keyword left no classification, so the row stayed at "sent". · Progress messages were mistaken for sign-in results. · Returning to the home screen after using "Handle" from the notification banner. · Lenient mode counted functional refusals as success.
 
 **变更**: Execution-result classification replaces scattered verdict branches. · Pending actions moved to a top summary bar. · Entries can be told apart in the list and the log. · Button-nature filtering removed in favour of "learn whatever you tap". · Status wording returned to plain language.
+
+### v1.6.1 (124) — 2026-09-28
+
+**Fixed**: Targets multiplied automatically: the module's own callbacks were misread as user learning. · Sent-state rollback caused duplicate sign-ins. · Non-check-in buttons entered the learning scope. · Incorrect account attribution in network-layer learning. · Account index clamping was too broad. · Disabled accounts still performed sign-ins. · Batch sign-in re-sent targets already signed. · The account overview omitted accounts on non-contiguous slots. · Buttons clearly labelled as check-ins were blocked (regression introduced in the previous build).
+
+**New**: Two more supported clients, and a corrected default scope. · Cleanup logging for mislearned entries.
+
+**Tooling**: README changelog generator supports block-style bilingual entries. · New build gate: README changelog must stay in sync. · Pure-logic unit tests grew from 174 to 297.
 
 [Full changelog →](https://github.com/wlmosv-png/TGAutoSign/blob/master/CHANGELOG.md)
 ## License
