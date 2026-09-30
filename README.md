@@ -21,9 +21,49 @@
 
 **⬇️ [下载最新版 APK](https://github.com/Xposed-Modules-Repo/io.github.wlmosv_png.tgautosign/releases/latest)** · [源码仓库](https://github.com/wlmosv-png/TGAutoSign)
 
+<sub>只从这两个地址下载。第三方站点的转载包请用下方指纹自行比对。</sub>
+
 作者 **wlmosv** · 好用的话 [给源码仓库点个 Star ⭐](https://github.com/wlmosv-png/TGAutoSign)
 
 </div>
+
+---
+
+### 🔐 本地运行 · Local by design
+
+<sub>无需账号密码、不碰官方 API、数据全在设备上。</sub>
+
+- **唯一联网行为**是每 12 小时一次的更新检查，可在设置中关闭，不携带任何签到数据
+- 签到目标与已签状态存在 Telegram 进程的本地存储，**不离开设备**
+- 模块**不申请**存储、通知、安装权限；自动化操作全部在设备侧完成，不经任何中转服务器
+
+
+<details>
+<summary><b>验证方式与签名指纹</b> · <i>Verify the build</i></summary>
+
+<br>
+
+官方 APK 签名证书 · *official signing certificate*
+
+```
+SHA-256  AF:55:24:CD:55:4A:E6:ED:E3:EC:27:47:C7:BE:D1:59
+         B0:9B:C4:F6:A4:32:44:A6:8B:46:22:E9:46:32:25:C8
+SHA-1    58:A2:B4:D3:F2:83:9A:92:7A:D4:0C:23:51:FE:43:AB:6F:D3:FB:C3
+```
+
+自己核对 · *check it yourself*
+
+```sh
+keytool -printcert -jarfile TGAutoSign-*.apk   # 比对上面的指纹
+sha256sum TGAutoSign-*.apk                     # 比对 Release 里的 sha256sum.txt
+```
+
+全仓库只有 `update/UpdateChecker.java` 一个类发起网络连接，可直接审计。
+指纹对应 2026-09 起使用的 release key；若将来更换密钥，会在 Release 说明中公告。
+
+> ⚠️ **风险提示** · *Risk notice* — 任何 Telegram 自动化都存在账号被限制的可能。本模块采用客户端侧签到、随机时窗与退避策略，已尽可能平滑，但**不承诺零风险**。
+
+</details>
 
 ---
 
@@ -62,13 +102,15 @@
 | 👤 | **多账号互不干扰** · **Multi-account, isolated** | 目标与已签状态按账号隔离；可一键把目标复制到其它账号<br>*Targets and signed-state are per account; copy targets across accounts.* |
 | 🔔 | **每天一条摘要** · **Daily summary** | 发到自己的收藏夹，不弹系统通知；连续失败 3 天额外告警<br>*One message to your Saved Messages; alert after 3 failing days.* |
 | 🌍 | **中英双语界面** · **Bilingual UI** | 英文设备装上即英文；设置里可手动切换<br>*English out of the box on English devices; switchable in Settings.* |
-| 🔒 | **数据全在本地** · **100% local** | 无服务器、无遥测、无上报<br>*No server, no telemetry.* |
+| 🔒 | **数据全在本地** · **Local by design** | 仅更新检查联网，可关闭<br>*Only the update check goes online — and it can be turned off.* |
 
 ---
 
 ## 🖥️ 支持的客户端 · Supported clients
 
 模块先按宿主包名判定，再按标志类能力兜底，命中才注入。
+
+<sub>**要求**：已 root + LSPosed（libxposed **API 102** 及以上，见 LSPosed Manager → 设置 → 关于）。**不支持**：未 root 设备、Telegram X、独立服务器部署。</sub>
 *Matched by host package first, then by flag classes as fallback — only injects on a match.*
 
 | 客户端 · Client | 包名 · Package | 状态 · Status |
@@ -86,9 +128,6 @@
 
 > ⚠️ **作用域 · Scope**：LSPosed 里默认只勾了官方版。用第三方客户端，请把**对应客户端**也勾进模块作用域。
 > *LSPosed enables only the official client by default. Using a third-party client? Tick **that** client in scope too.*
-
----
-
 
 ---
 
@@ -167,20 +206,6 @@
 **工具**：仓库里的 `build.sh` 缺三道门禁 · 纯逻辑单测从 115 条扩到 174 条 · 接线自检的成员清单里有早已删除的方法
 
 [完整更新日志 →](https://github.com/wlmosv-png/TGAutoSign/blob/master/CHANGELOG.md)
-
-## 🔗 下载渠道 · Download
-
-| 渠道 · Channel | 地址 · Where |
-| --- | --- |
-| **本页 Releases**（推荐）· *recommended* | [releases/latest](https://github.com/Xposed-Modules-Repo/io.github.wlmosv_png.tgautosign/releases/latest) |
-| 源码仓库 Releases · *source repo* | [wlmosv-png/TGAutoSign](https://github.com/wlmosv-png/TGAutoSign/releases) |
-| 模块内直达 · *in-app* | Telegram 发 ` /jmb ` → 检查更新 |
-
-> 同一版本两个仓库的 APK 逐字节一致（`sha256sum.txt` 附在 Release 里），
-> 签名始终是同一把 release key，覆盖安装不丢数据。
-> *Both repos ship byte-identical APKs (with `sha256sum.txt`), signed by the same release key — installing over keeps your data.*
-
----
 
 ## ⚖️ 许可 · License
 
