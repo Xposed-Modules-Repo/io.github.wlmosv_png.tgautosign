@@ -85,25 +85,19 @@ The fingerprint corresponds to the release key in use since September 2026; any 
 
 **English UI** — built in on English devices, no setup required
 
-### Dark
+Each page shown in dark / light
 
-| Main panel | Targets |
+| Main panel · Dark | Main panel · Light |
 | --- | --- |
-| ![Main panel](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-main-dark.png) | ![Targets](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-targets-dark.png) |
+| ![Main panel·Dark](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-main-dark.png) | ![Main panel·Light](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-main-light.png) |
 
-| Settings | |
+| Targets · Dark | Targets · Light |
 | --- | --- |
-| ![Settings](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-settings-dark.png) | |
+| ![Targets·Dark](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-targets-dark.png) | ![Targets·Light](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-targets-light.png) |
 
-### Light
-
-| Main panel | Targets |
+| Settings · Dark | Settings · Light |
 | --- | --- |
-| ![Main panel](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-main-light.png) | ![Targets](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-targets-light.png) |
-
-| Settings | |
-| --- | --- |
-| ![Settings](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-settings-light.png) | |
+| ![Settings·Dark](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-settings-dark.png) | ![Settings·Light](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-settings-light.png) |
 
 ## ✨ What it does
 

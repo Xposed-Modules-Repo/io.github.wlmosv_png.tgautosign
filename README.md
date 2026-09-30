@@ -87,25 +87,19 @@ sha256sum TGAutoSign-*.apk                     # 比对 Release 里的 sha256sum
 
 **英文界面 · English UI** — 内置，无需设置，英文设备装上即是英文
 
-### 暗色 · Dark
+同一页面的暗色 / 亮色对照
 
-| 主面板 | 目标列表 |
+| 主面板 · 暗色 | 主面板 · 亮色 |
 | --- | --- |
-| ![主面板](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-main-dark.png) | ![目标列表](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-targets-dark.png) |
+| ![主面板·暗色](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-main-dark.png) | ![主面板·亮色](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-main-light.png) |
 
-| 设置 | |
+| 目标列表 · 暗色 | 目标列表 · 亮色 |
 | --- | --- |
-| ![设置](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-settings-dark.png) | |
+| ![目标列表·暗色](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-targets-dark.png) | ![目标列表·亮色](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-targets-light.png) |
 
-### 亮色 · Light
-
-| 主面板 | 目标列表 |
+| 设置 · 暗色 | 设置 · 亮色 |
 | --- | --- |
-| ![主面板](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-main-light.png) | ![目标列表](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-targets-light.png) |
-
-| 设置 | |
-| --- | --- |
-| ![设置](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-settings-light.png) | |
+| ![设置·暗色](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-settings-dark.png) | ![设置·亮色](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-settings-light.png) |
 
 ## ✨ 它能做什么 · What it does
 
