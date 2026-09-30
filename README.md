@@ -2,9 +2,9 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="docs/banner-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="docs/banner-light.svg">
-    <img src="docs/banner-light.svg" alt="TGAutoSign" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/banner-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/banner-light.svg">
+    <img src="https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/banner-light.svg" alt="TGAutoSign" width="100%">
   </picture>
 </p>
 
@@ -75,25 +75,37 @@ sha256sum TGAutoSign-*.apk                     # 比对 Release 里的 sha256sum
 
 ## 📱 界面一览 · Screenshots
 
-**英文界面 · English UI** — 内置，无需设置 · *built in, no setup required*
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/hero-dark.png">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/hero-light.png">
+    <img src="https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/hero-light.png" alt="TGAutoSign 界面一览" width="100%">
+  </picture>
+</p>
 
-| Main panel | Main menu |
+**主面板** · **目标列表** — 截图由模块自带的 `/jmb shots` 导出，非手工截屏；目标名已替换为占位文本。
+
+**英文界面 · English UI** — 内置，无需设置，英文设备装上即是英文
+
+### 暗色 · Dark
+
+| 主面板 | 目标列表 |
 | --- | --- |
-| ![Main panel](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/main-en-dark.jpg) | ![Main menu](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/menu-en-dark.jpg) |
-| Targets | Settings |
-| ![Targets](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/targets-en-dark.jpg) | ![Settings](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/settings-en-dark.jpg) |
+| ![主面板](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/shot-main-dark.png) | ![目标列表](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/shot-targets-dark.png) |
 
-
-**中文界面 · Chinese UI**
-
-| 暗色 · 主面板 | 暗色 · 主菜单 |
-| --- | --- |
-| ![主面板·暗色](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/main-dark.jpg) | ![主菜单·暗色](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/menu-dark.jpg) |
 | 设置 | |
-| ![设置](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/settings-light.jpg) | |
+| --- | --- |
+| ![设置](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/shot-settings-dark.png) | |
 
+### 亮色 · Light
 
----
+| 主面板 | 目标列表 |
+| --- | --- |
+| ![主面板](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/shot-main-light.png) | ![目标列表](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/shot-targets-light.png) |
+
+| 设置 | |
+| --- | --- |
+| ![设置](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/shot-settings-light.png) | |
 
 ## ✨ 它能做什么 · What it does
 
@@ -193,6 +205,10 @@ sha256sum TGAutoSign-*.apk                     # 比对 Release 里的 sha256sum
 
 ## 📜 更新日志 · Changelog
 
+### v1.6.3 (129) — 2026-09-30
+
+**新增**：`/jmb shots` 导出界面图 · 渲染而非截屏
+
 ### v1.6.2 (128) — 2026-09-29
 
 **修复**：markSignedFromCallback 只写 opt_ 不写 last_（回调按钮签成功但没记录） · markFailed 清 sent_at_（防 sweep 误判为「bot 未回复」） · ensureTimerPlan 冻结目标不排计划 · 手动签到先清 opt_/pendingSigns，不再被「已发出」拦住 · 跨天 retry 计数重置，凌晨不再凭空冒「已放弃」 · statusOf 已签判断逻辑被误删导致全显示「已签」 · typeChip 文字恢复（14dp 图标+文字） · 「请求发出」被当作「签到成功」 · 文本指令被直接记为已签，此后 bot 的拒绝再无人处理 · 按钮失效的错误归因导致永久放弃重试 · 手动重试不清失效计数，重试很快被历史计数吃掉 · 归类码与既有字段冲突，导致归类丢失 · 兜底路径未写归类，界面与日志停在旧状态 · 未命中词表的回复不留归类，界面停在「已发出」 · 进度提示被误判为签到结果 · 从通知横幅进入「处理」后闪回桌面 · 宽松模式把功能性拒绝判成成功
@@ -201,16 +217,7 @@ sha256sum TGAutoSign-*.apk                     # 比对 Release 里的 sha256sum
 
 **新增**：已签目标绿色呼吸闪烁动画 · 「指令已发」状态与「已签」同绿色 · 待处理面板显示时间戳 + 条目内容 · 待添加候选面板卡片化 · typeChip 矢量图标（回调箭头/终端符）
 
-### v1.6.1 (124) — 2026-09-28
-
-**修复**：目标列表自动增殖：模块自身发起的回调被误判为用户学习 · 「已发出」状态回退导致重复签到 · 非签到按钮被纳入学习范围 · 网络层学习的账号归属错误 · 账号索引钳制范围过宽 · 停用账号仍执行签到 · 批量签到重复发送已签目标 · 账号一览遗漏非连续槽位账号 · 明确标识签到的按钮被过滤拦截（上一版引入的回归）
-
-**新增**：新增两个适配客户端，并修正默认作用域 · 误学条目清理日志
-
-**工具**：README 更新日志生成器支持成块对照格式 · 新增「README 更新日志同步」构建门禁 · 纯逻辑单测 174 → 297 条
-
 [完整更新日志 →](https://github.com/wlmosv-png/TGAutoSign/blob/master/CHANGELOG.md)
-
 ## ⚖️ 许可 · License
 
 基于 **GPLv3** 开源，仅供个人学习与自有账号使用。
