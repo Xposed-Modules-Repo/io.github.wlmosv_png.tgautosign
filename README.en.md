@@ -8,6 +8,8 @@
   </picture>
 </p>
 
+# TGAutoSign
+
 <p align="center"><a href="https://github.com/Xposed-Modules-Repo/io.github.wlmosv_png.tgautosign/blob/main/README.md">中文</a> · <b>English</b></p>
 
 **Tap once. Signed every day.**
