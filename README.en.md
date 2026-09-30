@@ -8,7 +8,13 @@
   </picture>
 </p>
 
-# TGAutoSign
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/title-animated-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/title-animated-light.svg">
+    <img src="https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/title-animated-light.svg" alt="TGAutoSign" width="480">
+  </picture>
+</p>
 
 <p align="center"><a href="https://github.com/Xposed-Modules-Repo/io.github.wlmosv_png.tgautosign/blob/main/README.md">中文</a> · <b>English</b></p>
 
