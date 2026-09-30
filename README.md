@@ -1,6 +1,12 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/banner.png" width="720" alt="TGAutoSign">
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/banner-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="docs/banner-light.svg">
+    <img src="docs/banner-light.svg" alt="TGAutoSign" width="100%">
+  </picture>
+</p>
 
 # TGAutoSign
 
