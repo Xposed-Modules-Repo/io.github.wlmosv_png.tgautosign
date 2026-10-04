@@ -2,9 +2,9 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/banner-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/banner-light.svg">
-    <img src="https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/banner-light.svg" alt="TGAutoSign" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="docs/banner-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="docs/banner-light.svg">
+    <img src="docs/banner-light.svg" alt="TGAutoSign" width="100%">
   </picture>
 </p>
 
@@ -73,9 +73,9 @@ The fingerprint corresponds to the release key in use since September 2026; any 
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/hero-dark.png">
-    <source media="(prefers-color-scheme: light)" srcset="https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/hero-light.png">
-    <img src="https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/hero-light.png" alt="TGAutoSign UI overview" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="docs/hero-dark.png">
+    <source media="(prefers-color-scheme: light)" srcset="docs/hero-light.png">
+    <img src="docs/hero-light.png" alt="TGAutoSign UI overview" width="100%">
   </picture>
 </p>
 
@@ -87,15 +87,15 @@ Each page shown in dark / light
 
 | Main panel · Dark | Main panel · Light |
 | --- | --- |
-| ![Main panel·Dark](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-main-dark.png) | ![Main panel·Light](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-main-light.png) |
+| ![Main panel·Dark](docs/screenshots/shot-main-dark.png) | ![Main panel·Light](docs/screenshots/shot-main-light.png) |
 
 | Targets · Dark | Targets · Light |
 | --- | --- |
-| ![Targets·Dark](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-targets-dark.png) | ![Targets·Light](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-targets-light.png) |
+| ![Targets·Dark](docs/screenshots/shot-targets-dark.png) | ![Targets·Light](docs/screenshots/shot-targets-light.png) |
 
 | Settings · Dark | Settings · Light |
 | --- | --- |
-| ![Settings·Dark](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-settings-dark.png) | ![Settings·Light](https://github.com/wlmosv-png/TGAutoSign/raw/master/docs/screenshots/shot-settings-light.png) |
+| ![Settings·Dark](docs/screenshots/shot-settings-dark.png) | ![Settings·Light](docs/screenshots/shot-settings-light.png) |
 
 ## What it does
 
@@ -128,6 +128,7 @@ The module matches by host package first, then falls back to flag-class capabili
 | ExteraLess (ExteraGram fork) | `com.exteraless.app` | ✅ tested on 12.10.1 |
 | Nekogram | `tw.nekomimi.nekogram` | ✅ tested on 12.10.3 |
 | Mercurygram | `it.belloworld.mercurygram` | ✅ tested on 12.10.3.1 |
+| Turrit | `org.telegram.group` | ✅ statically verified on 1.9.0.4.2 |
 | Nagram / NagramX / NagramNX | `nu.gpu.nagram` etc. | whitelisted, not tested |
 | Other Telegram-Android forks | any | injects if flag classes are intact |
 | Telegram X | — | ❌ not injected (different core) |
@@ -179,21 +180,26 @@ You installed a debug build. Uninstall it, then install the official APK from th
 
 ## 更新日志 · Changelog
 
+### v1.6.3 (129) — 2026-10-05
+
+**Fixed**: Button learning was broken: the type check was case-sensitive. · The in-bubble button callback class no longer exists in official Telegram. · Tapping a button could do nothing, with no log at all. · A group target was re-sent 13 times in one day. · Duplicate sends in groups; the bot's "used up today" reply was not recognised. · The missed-check-in root cause: two different data sources. · Infinite recursion froze Telegram (ANR). · The daily summary could never be sent. · Logs showed a fabricated 1970-01-01 timestamp. · The stats page silently dropped entries; sections were clipped. · Every switch looked off. · Switching tabs made the whole panel disappear. · Plain-mode log order was inverted; the home page showed entries the log page did not. · Calendar streak was inflated; the "not signed today" state was unreachable. · Four classes of issues found in a full code read-through.
+
+**Changed**: Full visual rework: from outlines everywhere to layering by surface tone. · Buttons now have four levels. · The light theme is warmer; light mode now uses solid colours instead of translucent overlays. · Settings: from stacked collapsible cards to an anchor bar plus one scrollable card. · The entry action menu now uses grouped cards with a single primary action. · Edit target: labels moved outside the fields; template chips now wrap. · Exclusion manager rebuilt as a four-step workflow. · Recent activity: fixed-width time column, icon slot, single-line truncation. · The stats page was rebuilt, drawn entirely on Canvas — no image assets. · Account overview redesigned. · The main panel was simplified.
+
+**New**: Rule tester. · Turrit support. · External notifications (ntfy / Bark) and automatic backups. · The `/help` command opens the same guide as `/jmb`. · The guide was rewritten section by section and re-checked against the implementation. · The opening animation no longer loops forever, and the user can choose.
+
 ### v1.6.2 (128) — 2026-09-29
 
-**Fixed**: Symptom: targets whose button could not be tapped, and where the bot merely replied with a greeting… · Text commands were recorded as signed immediately, after which the bot's refusals were ignored. · Wrong attribution of expired buttons caused permanent retry abandonment. · Manual retry did not clear the expiry counter, so retries were quickly consumed. · The classification code collided with an existing field, losing the classification. · The fallback path did not record a classification, leaving the UI and log on the old state. · Replies matching no keyword left no classification, so the row stayed at "sent". · Progress messages were mistaken for sign-in results. · Returning to the home screen after using "Handle" from the notification banner. · Lenient mode counted functional refusals as success.
+**Fixed**: A manual sign-in now clears `opt_`/`pendingSigns` first, so it is no longer blocked by a "sent" marker. · The retry counter resets across day boundaries, so "gave up" no longer appears out of nowhere after midnight. · The signed-state branch in `statusOf` had been deleted by accident, making everything show as signed. · The type chip label is back — a 14dp icon plus text. · Symptom: targets whose button could not be tapped, and where the bot merely replied with a greeting… · Text commands were recorded as signed immediately, after which the bot's refusals were ignored. · Wrong attribution of expired buttons caused permanent retry abandonment. · Manual retry did not clear the expiry counter, so retries were quickly consumed. · The classification code collided with an existing field, losing the classification. · The fallback path did not record a classification, leaving the UI and log on the old state. · Replies matching no keyword left no classification, so the row stayed at "sent". · Progress messages were mistaken for sign-in results. · Returning to the home screen after using "Handle" from the notification banner. · Lenient mode counted functional refusals as success.
 
-**变更**: Execution-result classification replaces scattered verdict branches. · Pending actions moved to a top summary bar. · Entries can be told apart in the list and the log. · Button-nature filtering removed in favour of "learn whatever you tap". · Status wording returned to plain language.
+**Changed**: Execution-result classification replaces scattered verdict branches. · Pending actions moved to a top summary bar. · Entries can be told apart in the list and the log. · Button-nature filtering removed in favour of "learn whatever you tap". · Status wording returned to plain language.
 
-### v1.6.1 (124) — 2026-09-28
-
-**Fixed**: Targets multiplied automatically: the module's own callbacks were misread as user learning. · Sent-state rollback caused duplicate sign-ins. · Non-check-in buttons entered the learning scope. · Incorrect account attribution in network-layer learning. · Account index clamping was too broad. · Disabled accounts still performed sign-ins. · Batch sign-in re-sent targets already signed. · The account overview omitted accounts on non-contiguous slots. · Buttons clearly labelled as check-ins were blocked (regression introduced in the previous build).
-
-**New**: Two more supported clients, and a corrected default scope. · Cleanup logging for mislearned entries.
-
-**Tooling**: README changelog generator supports block-style bilingual entries. · New build gate: README changelog must stay in sync. · Pure-logic unit tests grew from 174 to 297.
+**New**: Signed targets now breathe with a green pulse. · The pending panel shows a timestamp along with the entry itself. · Candidates waiting to be added are now shown as cards. · The type chip uses vector icons — a callback arrow and a terminal glyph.
 
 [Full changelog →](https://github.com/wlmosv-png/TGAutoSign/blob/master/CHANGELOG.md)
+
+[Full changelog →](https://github.com/wlmosv-png/TGAutoSign/blob/master/CHANGELOG.md)
+
 ## License
 
 Licensed under **GPLv3**. For personal use with your own accounts.
