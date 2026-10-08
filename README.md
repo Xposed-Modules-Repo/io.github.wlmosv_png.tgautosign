@@ -2,9 +2,9 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="docs/banner-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="docs/banner-light.svg">
-    <img src="docs/banner-light.svg" alt="TGAutoSign" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/wlmosv-png/TGAutoSign@master/docs/banner-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/wlmosv-png/TGAutoSign@master/docs/banner-light.svg">
+    <img src="https://cdn.jsdelivr.net/gh/wlmosv-png/TGAutoSign@master/docs/banner-light.svg" alt="TGAutoSign" width="100%">
   </picture>
 </p>
 
@@ -20,7 +20,7 @@
 [![Latest Release](https://img.shields.io/github/v/release/Xposed-Modules-Repo/io.github.wlmosv_png.tgautosign?label=%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC&color=blue)](https://github.com/Xposed-Modules-Repo/io.github.wlmosv_png.tgautosign/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/Xposed-Modules-Repo/io.github.wlmosv_png.tgautosign/total?label=%E4%B8%8B%E8%BD%BD%E9%87%8F&color=brightgreen)](https://github.com/Xposed-Modules-Repo/io.github.wlmosv_png.tgautosign/releases)
 [![API](https://img.shields.io/badge/libxposed-API%20102-8A2BE2)](https://github.com/LSPosed/LSPlant)
-[![License](https://img.shields.io/badge/license-GPLv3-green)](LICENSE)
+[![License](https://img.shields.io/badge/license-GPLv3-green)](https://github.com/wlmosv-png/TGAutoSign/blob/master/LICENSE)
 [![Telegram Group](https://img.shields.io/badge/Telegram-Join%20Group-26A5E4?logo=telegram&logoColor=white)](https://t.me/+V2Oyu8pSubs4ZjE0)
 
 **[下载最新版 APK](https://github.com/Xposed-Modules-Repo/io.github.wlmosv_png.tgautosign/releases/latest)** · [源码仓库](https://github.com/wlmosv-png/TGAutoSign)
@@ -75,9 +75,9 @@ sha256sum TGAutoSign-*.apk                     # 比对 Release 里的 sha256sum
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="docs/hero-dark.png">
-    <source media="(prefers-color-scheme: light)" srcset="docs/hero-light.png">
-    <img src="docs/hero-light.png" alt="TGAutoSign 界面一览" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/wlmosv-png/TGAutoSign@master/docs/hero-dark.png">
+    <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/wlmosv-png/TGAutoSign@master/docs/hero-light.png">
+    <img src="https://cdn.jsdelivr.net/gh/wlmosv-png/TGAutoSign@master/docs/hero-light.png" alt="TGAutoSign 界面一览" width="100%">
   </picture>
 </p>
 
@@ -89,15 +89,15 @@ sha256sum TGAutoSign-*.apk                     # 比对 Release 里的 sha256sum
 
 | 主面板 · 暗色 | 主面板 · 亮色 |
 | --- | --- |
-| ![主面板·暗色](docs/screenshots/shot-main-dark.png) | ![主面板·亮色](docs/screenshots/shot-main-light.png) |
+| ![主面板·暗色](https://cdn.jsdelivr.net/gh/wlmosv-png/TGAutoSign@master/docs/screenshots/shot-main-dark.png) | ![主面板·亮色](https://cdn.jsdelivr.net/gh/wlmosv-png/TGAutoSign@master/docs/screenshots/shot-main-light.png) |
 
 | 目标列表 · 暗色 | 目标列表 · 亮色 |
 | --- | --- |
-| ![目标列表·暗色](docs/screenshots/shot-targets-dark.png) | ![目标列表·亮色](docs/screenshots/shot-targets-light.png) |
+| ![目标列表·暗色](https://cdn.jsdelivr.net/gh/wlmosv-png/TGAutoSign@master/docs/screenshots/shot-targets-dark.png) | ![目标列表·亮色](https://cdn.jsdelivr.net/gh/wlmosv-png/TGAutoSign@master/docs/screenshots/shot-targets-light.png) |
 
 | 设置 · 暗色 | 设置 · 亮色 |
 | --- | --- |
-| ![设置·暗色](docs/screenshots/shot-settings-dark.png) | ![设置·亮色](docs/screenshots/shot-settings-light.png) |
+| ![设置·暗色](https://cdn.jsdelivr.net/gh/wlmosv-png/TGAutoSign@master/docs/screenshots/shot-settings-dark.png) | ![设置·亮色](https://cdn.jsdelivr.net/gh/wlmosv-png/TGAutoSign@master/docs/screenshots/shot-settings-light.png) |
 
 ## 它能做什么 · What it does
 
@@ -130,7 +130,7 @@ sha256sum TGAutoSign-*.apk                     # 比对 Release 里的 sha256sum
 | Nagram（NextAlone）| `xyz.nextalone.nagram` | ✅ 12.10.3 实测 · *tested* |
 | Nagram XF | `fork.risin42.nagramx` | ✅ dec46b0 实测 · *tested* |
 | ExteraLess | `com.exteraless.app` | ✅ 12.10.1 实测 · *tested* |
-| Nekogram | `tw.nekomimi.nekogram` | ✅ 12.10.3 实测 · *tested* |
+| Nekogram | `tw.nekomimi.nekogram` | ❌ 不注入（R8 混淆过深）· *not injected* |
 | Mercurygram | `it.belloworld.mercurygram` | ✅ 12.10.3.1 实测 · *tested* |
 | Turrit | `org.telegram.group` | ✅ 1.9.0.4.2 静态核对 · *statically verified* |
 | Nagram / NagramX / NagramNX | `nu.gpu.nagram` 等 | 白名单覆盖，未实测 · *whitelisted, untested* |
@@ -198,6 +198,12 @@ sha256sum TGAutoSign-*.apk                     # 比对 Release 里的 sha256sum
 
 ## 更新日志 · Changelog
 
+### v1.6.4 (130) — 2026-10-08
+
+**修复**：机器人发个「签到规则」都可能被判成签到成功 · 群里机器人回复了，模块却说没等到 · 群里别人签到，算到了你头上 · 群 ID 少写一个「100」，这个群就永远认不出 · 机器人说「次数已达上限」，被当成没签上 · 自己发的签到，跑到「未识别回复」里等你判断 · 待添加列表里，同一条内容越滚越长 · 被拦下的按钮直接消失，找不回来 · 群里聊到「签到」两个字也被收集 · 打开日志会闪一下 · 目标列表和统计页，最后一行永远看不到 · 「未识别回复」页点一下卡一下 · 待添加显示「1 个」，点进去有好几个 · Turrit 装上模块却不生效 · 机器人说「签到失败，详见规则」被判成无法判断 · 「不是签到成功」这种带否定的话会被判错 · 机器人说「已封禁/禁止参与」被当成无法判断 · 更新下载更稳了
+
+**新增**：「未识别回复」页重做 · 机器人认不出的回复，可以教它 · 点按钮不再「点什么学什么」 · 确认新目标时，可以顺手记住「以后怎么办」 · 像签到的按钮直接学，其余才问你
+
 ### v1.6.3 (129) — 2026-10-05
 
 **修复**：按钮学习失效（本版最重要）——类型判据大小写敏感 · 气泡内按钮的回调类在官方版里已不存在 · `/help` 是句空话 · 按钮点了没反应且零日志 · 群目标当天重发 13 次 · 群聊重复发送 / 未识别「今日用尽」 · 「请求发出」被当成「签到成功」 · 漏签根因：判定与落盘不同源 · 无限递归导致 Telegram 卡死（ANR） · 每日摘要永远发不出 · 文字冒出「1970-01-01」 · 列表「少一行」与「整块空白」 · 统计页静默丢条目、各处尺寸被裁 · 开关看起来全是关的 · 切 Tab 后面板消失（严重） · 易懂档日志顺序倒置、「首页有、日志页没有」 · 日历摘要连签虚高、今日状态不可达 · 代码通读发现的四类问题
@@ -205,16 +211,6 @@ sha256sum TGAutoSign-*.apk                     # 比对 Release 里的 sha256sum
 **变更**：界面整体重做：从「到处是框」改为「靠底色分层」 · `termBorder` 本体改为忽略描边参数 · 按钮分四级 · 日间色调转暖，浅色模式改用实色分层 · 设置页：多卡折叠 → 顶部锚点条 + 单卡 · 条目操作菜单：分组卡片 + 唯一主操作 · 编辑目标：标签外置 + 模板 chip 按宽度自动折行 · 排除管理：改为 ①②③④ 四步工作流 · 最近动态：时间定宽左列 + 图标槽 + 单行截断 · 统计页重做 · 账号一览改版 · 主面板减法
 
 **新增**：规则测试器 · Turrit 适配 · 外部通知 · `/help` 命令 · 教程全面重写 · 界面主题跟随修复
-
-### v1.6.2 (128) — 2026-09-29
-
-**修复**：markSignedFromCallback 只写 opt_ 不写 last_（回调按钮签成功但没记录） · markFailed 清 sent_at_（防 sweep 误判为「bot 未回复」） · ensureTimerPlan 冻结目标不排计划 · 手动签到先清 opt_/pendingSigns，不再被「已发出」拦住 · 跨天 retry 计数重置，凌晨不再凭空冒「已放弃」 · statusOf 已签判断逻辑被误删导致全显示「已签」 · typeChip 文字恢复（14dp 图标+文字） · 「请求发出」被当作「签到成功」 · 文本指令被直接记为已签，此后 bot 的拒绝再无人处理 · 按钮失效的错误归因导致永久放弃重试 · 手动重试不清失效计数，重试很快被历史计数吃掉 · 归类码与既有字段冲突，导致归类丢失 · 兜底路径未写归类，界面与日志停在旧状态 · 未命中词表的回复不留归类，界面停在「已发出」 · 进度提示被误判为签到结果 · 从通知横幅进入「处理」后闪回桌面 · 宽松模式把功能性拒绝判成成功
-
-**变更**：执行结果归类取代散落的成败判定 · 待处理处置改为顶部聚合条 · 同一条目在列表与日志中可辨识 · 按钮性质过滤整体移除，改为「点什么学什么」 · 状态文案回到用户能直接理解的说法
-
-**新增**：已签目标绿色呼吸闪烁动画 · 「指令已发」状态与「已签」同绿色 · 待处理面板显示时间戳 + 条目内容 · 待添加候选面板卡片化 · typeChip 矢量图标（回调箭头/终端符）
-
-[完整更新日志 →](https://github.com/wlmosv-png/TGAutoSign/blob/master/CHANGELOG.md)
 
 [完整更新日志 →](https://github.com/wlmosv-png/TGAutoSign/blob/master/CHANGELOG.md)
 
