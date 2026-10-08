@@ -126,7 +126,6 @@ The module matches by host package first, then falls back to flag-class capabili
 | Nagram (NextAlone) | `xyz.nextalone.nagram` | ✅ tested on 12.10.3 |
 | Nagram XF | `fork.risin42.nagramx` | ✅ tested (dec46b0) |
 | ExteraLess (ExteraGram fork) | `com.exteraless.app` | ✅ tested on 12.10.1 |
-| Nekogram | `tw.nekomimi.nekogram` | ❌ not injected (heavily R8-obfuscated) |
 | Mercurygram | `it.belloworld.mercurygram` | ✅ tested on 12.10.3.1 |
 | Turrit | `org.telegram.group` | ✅ statically verified on 1.9.0.4.2 |
 | Nagram / NagramX / NagramNX | `nu.gpu.nagram` etc. | whitelisted, not tested |

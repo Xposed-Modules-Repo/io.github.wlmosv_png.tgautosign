@@ -130,7 +130,6 @@ sha256sum TGAutoSign-*.apk                     # 比对 Release 里的 sha256sum
 | Nagram（NextAlone）| `xyz.nextalone.nagram` | ✅ 12.10.3 实测 · *tested* |
 | Nagram XF | `fork.risin42.nagramx` | ✅ dec46b0 实测 · *tested* |
 | ExteraLess | `com.exteraless.app` | ✅ 12.10.1 实测 · *tested* |
-| Nekogram | `tw.nekomimi.nekogram` | ❌ 不注入（R8 混淆过深）· *not injected* |
 | Mercurygram | `it.belloworld.mercurygram` | ✅ 12.10.3.1 实测 · *tested* |
 | Turrit | `org.telegram.group` | ✅ 1.9.0.4.2 静态核对 · *statically verified* |
 | Nagram / NagramX / NagramNX | `nu.gpu.nagram` 等 | 白名单覆盖，未实测 · *whitelisted, untested* |
