@@ -15,11 +15,11 @@
 Tap the bot's check-in button in Telegram once — then never think about it again.
 The control panel lives inside Telegram: send `/jmb` in any chat.
 
-[![Latest Release](https://img.shields.io/github/v/release/Xposed-Modules-Repo/io.github.wlmosv_png.tgautosign?label=release&color=blue)](https://github.com/Xposed-Modules-Repo/io.github.wlmosv_png.tgautosign/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/Xposed-Modules-Repo/io.github.wlmosv_png.tgautosign/total?label=downloads&color=brightgreen)](https://github.com/Xposed-Modules-Repo/io.github.wlmosv_png.tgautosign/releases/latest)
-[![API](https://img.shields.io/badge/libxposed-API%20102-8A2BE2)](https://github.com/LSPosed/LSPlant)
-[![License](https://img.shields.io/badge/license-GPLv3-green)](https://github.com/wlmosv-png/TGAutoSign/blob/master/LICENSE)
-[![Telegram Group](https://img.shields.io/badge/Telegram-Join%20Group-26A5E4?logo=telegram&logoColor=white)](https://t.me/+V2Oyu8pSubs4ZjE0)
+[![Latest Release](https://img.shields.io/github/v/release/Xposed-Modules-Repo/io.github.wlmosv_png.tgautosign?label=release&color=8e44ad)](https://github.com/Xposed-Modules-Repo/io.github.wlmosv_png.tgautosign/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/Xposed-Modules-Repo/io.github.wlmosv_png.tgautosign/total?label=downloads&color=8e44ad)](https://github.com/Xposed-Modules-Repo/io.github.wlmosv_png.tgautosign/releases/latest)
+[![API](https://img.shields.io/badge/libxposed-API%20102-8e44ad?labelColor=3d3d3d)](https://github.com/LSPosed/LSPlant)
+[![License](https://img.shields.io/badge/license-GPLv3-8e44ad?labelColor=3d3d3d)](https://github.com/wlmosv-png/TGAutoSign/blob/master/LICENSE)
+[![Telegram Group](https://img.shields.io/badge/Telegram-Join%20Group-8e44ad?labelColor=3d3d3d&logo=telegram&logoColor=white)](https://t.me/+V2Oyu8pSubs4ZjE0)
 
 **[Download the latest APK](https://github.com/Xposed-Modules-Repo/io.github.wlmosv_png.tgautosign/releases/latest)** · [Source repo](https://github.com/wlmosv-png/TGAutoSign)
 
