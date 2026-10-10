@@ -121,13 +121,13 @@ The module matches by host package first, then falls back to flag-class capabili
 
 | Client | Package | Status |
 | --- | --- | --- |
-| Telegram (Play / default) | `org.telegram.messenger` | ✅ tested on 12.10.4 |
+| Telegram (Play / default) | `org.telegram.messenger` | ✅ tested on 12.10.6 |
 | Telegram (direct APK) | `org.telegram.messenger.web` | ✅ statically verified |
 | Nagram (NextAlone) | `xyz.nextalone.nagram` | ✅ tested on 12.10.3 |
 | Nagram XF | `fork.risin42.nagramx` | ✅ tested (dec46b0) |
 | ExteraLess (ExteraGram fork) | `com.exteraless.app` | ✅ tested on 12.10.1 |
 | Mercurygram | `it.belloworld.mercurygram` | ✅ tested on 12.10.3.1 |
-| Turrit | `org.telegram.group` | ✅ statically verified on 1.9.0.4.2 |
+| Turrit | `org.telegram.group` | ✅ tested on 1.9.0.4.2 |
 | Nagram / NagramX / NagramNX | `nu.gpu.nagram` etc. | whitelisted, not tested |
 | Other Telegram-Android forks | any | injects if flag classes are intact |
 | Telegram X | — | ❌ not injected (different core) |
@@ -179,21 +179,21 @@ You installed a debug build. Uninstall it, then install the official APK from th
 
 ## 更新日志 · Changelog
 
+### v1.6.5 (131) — 2026-10-10
+
+**Fixed**: The plain/detailed log toggle was not remembered. · Add and sign now could silently do nothing. · Can't find this chat: the last-resort lookup never worked. · Adding a second sign-in target to the same group overwrote the first. · The same group added twice with different id formats showed up as two targets. · With two targets in one group, replies could never be matched. · Switching to the log tab flickered. · The log box was half the height of the target list.
+
+**New**: Group targets now show the group name. · Adding a target is now two steps. · New: sign-in statistics. · New: clear logs and clean up leftover state. · Target management is grouped by purpose. · Eight color themes, applied instantly. · Animations on a successful sign-in.
+
 ### v1.6.4 (130) — 2026-10-08
 
 **Fixed**: A bot's "rules" or "stats" message could be mistaken for a successful check-in. · In groups, the bot could reply and the module still reported "no reply". · Someone else checking in could be credited to you. · A group id missing the "100" prefix could never be matched. · Your own command could show up in the "unrecognised replies" list. · One entry in the pending list could keep growing. · A filtered button used to vanish with no way back. · Mentioning "check-in" while chatting could be collected. · Opening the log page flickered. · The last row could be cut off in the target list and stats. · The review page stuttered on every tap. · The pending badge said 1 while several items were waiting. · The Turrit client was installed but the module never took effect. · Negated phrasings could be misjudged. · The in-app updater got safer.
 
 **New**: The review page got a full redesign. · You can now teach it replies it can't read. · Tapping a button no longer learns everything. · Confirming a candidate can also remember what to do next time. · Sign-in-like buttons are learned automatically; the rest are asked about.
 
-### v1.6.3 (129) — 2026-10-05
-
-**Fixed**: Button learning was broken: the type check was case-sensitive. · The in-bubble button callback class no longer exists in official Telegram. · Tapping a button could do nothing, with no log at all. · A group target was re-sent 13 times in one day. · Duplicate sends in groups; the bot's "used up today" reply was not recognised. · The missed-check-in root cause: two different data sources. · Infinite recursion froze Telegram (ANR). · The daily summary could never be sent. · Logs showed a fabricated 1970-01-01 timestamp. · The stats page silently dropped entries; sections were clipped. · Every switch looked off. · Switching tabs made the whole panel disappear. · Plain-mode log order was inverted; the home page showed entries the log page did not. · Calendar streak was inflated; the "not signed today" state was unreachable. · Four classes of issues found in a full code read-through.
-
-**Changed**: Full visual rework: from outlines everywhere to layering by surface tone. · Buttons now have four levels. · The light theme is warmer; light mode now uses solid colours instead of translucent overlays. · Settings: from stacked collapsible cards to an anchor bar plus one scrollable card. · The entry action menu now uses grouped cards with a single primary action. · Edit target: labels moved outside the fields; template chips now wrap. · Exclusion manager rebuilt as a four-step workflow. · Recent activity: fixed-width time column, icon slot, single-line truncation. · The stats page was rebuilt, drawn entirely on Canvas — no image assets. · Account overview redesigned. · The main panel was simplified.
-
-**New**: Rule tester. · Turrit support. · External notifications (ntfy / Bark) and automatic backups. · The `/help` command opens the same guide as `/jmb`. · The guide was rewritten section by section and re-checked against the implementation. · The opening animation no longer loops forever, and the user can choose.
-
 [Full changelog →](https://github.com/wlmosv-png/TGAutoSign/blob/master/CHANGELOG.md)
+
+
 
 ## License
 
