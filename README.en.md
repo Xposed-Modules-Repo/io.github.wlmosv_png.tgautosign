@@ -121,18 +121,20 @@ The module matches by host package first, then falls back to flag-class capabili
 
 | Client | Package | Status |
 | --- | --- | --- |
-| Telegram (Play / default) | `org.telegram.messenger` | ✅ tested on 12.10.6 |
-| Telegram (direct APK) | `org.telegram.messenger.web` | ✅ statically verified |
+| Telegram (Play / default) | `org.telegram.messenger` | ✅ tested on 13.0.1 |
+| Telegram (direct APK) | `org.telegram.messenger.web` | ✅ tested |
 | Nagram (NextAlone) | `xyz.nextalone.nagram` | ✅ tested on 12.10.3 |
-| Nagram XF | `fork.risin42.nagramx` | ✅ tested (dec46b0) |
-| ExteraLess (ExteraGram fork) | `com.exteraless.app` | ✅ tested on 12.10.1 |
+| Nagram XF | `fork.risin42.nagramx` | ✅ tested |
+| ExteraLess (ExteraGram fork) | `com.exteraless.app` | ✅ tested on 12.10.5 |
 | Mercurygram | `it.belloworld.mercurygram` | ✅ tested on 12.10.3.1 |
 | Turrit | `org.telegram.group` | ✅ tested on 1.9.0.4.2 |
-| Nagram / NagramX / NagramNX | `nu.gpu.nagram` etc. | whitelisted, not tested |
+| Nnngram (NextAlone) | `xyz.nextalone.nnngram` | ✅ tested on 12.10.6 |
+| AyuGram | `com.radolyn.ayugram` | ✅ tested |
+| Nagram / NagramX / NagramNX | `nu.gpu.nagram` etc. | ✅ tested |
 | Other Telegram-Android forks | any | injects if flag classes are intact |
 | Telegram X | — | ❌ not injected (different core) |
 
-Adapted for the whole Telegram **12.10.x** line, including 12.10.4.
+Adapted for the whole Telegram **12.10.x / 13.0.x** line.
 
 > ⚠️ **Scope**: LSPosed only enables the official client by default. If you use a third-party client, tick **that client** in the module's scope as well.
 
@@ -179,17 +181,21 @@ You installed a debug build. Uninstall it, then install the official APK from th
 
 ## 更新日志 · Changelog
 
+### v1.6.6 (132) — 2026-10-13
+
+**New**: AyuGram and Nnngram clients are now supported.
+
+**Improved**: Per-account settings. · Copying targets is now one step. · Smoother with multiple accounts. · App icon and description.
+
+**Fixed**: Settings now persist. · Deleting a target only affects the current account. · The target list now matches the current account.
+
 ### v1.6.5 (131) — 2026-10-10
 
 **Fixed**: The plain/detailed log toggle was not remembered. · Add and sign now could silently do nothing. · Can't find this chat: the last-resort lookup never worked. · Adding a second sign-in target to the same group overwrote the first. · The same group added twice with different id formats showed up as two targets. · With two targets in one group, replies could never be matched. · Switching to the log tab flickered. · The log box was half the height of the target list.
 
 **New**: Group targets now show the group name. · Adding a target is now two steps. · New: sign-in statistics. · New: clear logs and clean up leftover state. · Target management is grouped by purpose. · Eight color themes, applied instantly. · Animations on a successful sign-in.
 
-### v1.6.4 (130) — 2026-10-08
-
-**Fixed**: A bot's "rules" or "stats" message could be mistaken for a successful check-in. · In groups, the bot could reply and the module still reported "no reply". · Someone else checking in could be credited to you. · A group id missing the "100" prefix could never be matched. · Your own command could show up in the "unrecognised replies" list. · One entry in the pending list could keep growing. · A filtered button used to vanish with no way back. · Mentioning "check-in" while chatting could be collected. · Opening the log page flickered. · The last row could be cut off in the target list and stats. · The review page stuttered on every tap. · The pending badge said 1 while several items were waiting. · The Turrit client was installed but the module never took effect. · Negated phrasings could be misjudged. · The in-app updater got safer.
-
-**New**: The review page got a full redesign. · You can now teach it replies it can't read. · Tapping a button no longer learns everything. · Confirming a candidate can also remember what to do next time. · Sign-in-like buttons are learned automatically; the rest are asked about.
+[Full changelog →](https://github.com/wlmosv-png/TGAutoSign/blob/master/CHANGELOG.md)
 
 [Full changelog →](https://github.com/wlmosv-png/TGAutoSign/blob/master/CHANGELOG.md)
 

@@ -125,14 +125,16 @@ sha256sum TGAutoSign-*.apk                     # 比对 Release 里的 sha256sum
 
 | 客户端 · Client | 包名 · Package | 状态 · Status |
 | --- | --- | --- |
-| Telegram（Play / 默认渠道）| `org.telegram.messenger` | ✅ 12.10.6 实测 · *tested* |
-| Telegram（官网直连版）| `org.telegram.messenger.web` | ✅ 静态核对 · *statically verified* |
+| Telegram（Play / 默认渠道）| `org.telegram.messenger` | ✅ 13.0.1 实测 · *tested* |
+| Telegram（官网直连版）| `org.telegram.messenger.web` | ✅ 实测 · *tested* |
 | Nagram（NextAlone）| `xyz.nextalone.nagram` | ✅ 12.10.3 实测 · *tested* |
-| Nagram XF | `fork.risin42.nagramx` | ✅ dec46b0 实测 · *tested* |
-| ExteraLess | `com.exteraless.app` | ✅ 12.10.1 实测 · *tested* |
+| Nagram XF | `fork.risin42.nagramx` | ✅ 实测 · *tested* |
+| ExteraLess | `com.exteraless.app` | ✅ 12.10.5 实测 · *tested* |
 | Mercurygram | `it.belloworld.mercurygram` | ✅ 12.10.3.1 实测 · *tested* |
 | Turrit | `org.telegram.group` | ✅ 1.9.0.4.2 实测 · *tested* |
-| Nagram / NagramX / NagramNX | `nu.gpu.nagram` 等 | 白名单覆盖，未实测 · *whitelisted, untested* |
+| Nnngram（NextAlone）| `xyz.nextalone.nnngram` | ✅ 12.10.6 实测 · *tested* |
+| AyuGram | `com.radolyn.ayugram` | ✅ 实测 · *tested* |
+| Nagram / NagramX / NagramNX | `nu.gpu.nagram` 等 | ✅ 实测 · *tested* |
 | 其它 Telegram-Android fork | 任意 | 标志类齐全即注入 · *injects if flags intact* |
 | Telegram X | — | ❌ 不注入（换内核）· *not injected* |
 
@@ -197,17 +199,21 @@ sha256sum TGAutoSign-*.apk                     # 比对 Release 里的 sha256sum
 
 ## 更新日志 · Changelog
 
+### v1.6.6 (132) — 2026-10-13
+
+**新增**：支持 AyuGram、Nnngram 客户端
+
+**优化**：多账号配置各自独立 · 复制目标更省事 · 多账号下更流畅 · 应用图标与说明
+
+**修复**：设置保存更可靠 · 删除目标范围更准 · 切换账号显示更准
+
 ### v1.6.5 (131) — 2026-10-10
 
 **修复**：日志的「易懂 / 详细」记不住 · 手动填机器人 ID 点「添加并签到」没反应 · 「取不到会话数据，去发一句话才行」 · 同一个群里挂第二个签到目标，会把第一个覆盖掉 · 同一个群，少写一段 ID 加过一次，就变成两个目标 · 同一个群里两个目标，回复永远判不出 · 切到日志页会闪一下 · 日志框比目标列表矮一半，没日志时更矮
 
 **新增**：群目标终于显示群名了 · 添加目标改成两步 · 数据里多了「签到统计」 · 数据里多了「清空日志」和「数据清理」 · 目标管理按用途分组，删除单独隔开 · 8 套配色，点了当场生效 · 签到成功后的动效
 
-### v1.6.4 (130) — 2026-10-08
-
-**修复**：机器人发个「签到规则」都可能被判成签到成功 · 群里机器人回复了，模块却说没等到 · 群里别人签到，算到了你头上 · 群 ID 少写一个「100」，这个群就永远认不出 · 机器人说「次数已达上限」，被当成没签上 · 自己发的签到，跑到「未识别回复」里等你判断 · 待添加列表里，同一条内容越滚越长 · 被拦下的按钮直接消失，找不回来 · 群里聊到「签到」两个字也被收集 · 打开日志会闪一下 · 目标列表和统计页，最后一行永远看不到 · 「未识别回复」页点一下卡一下 · 待添加显示「1 个」，点进去有好几个 · Turrit 装上模块却不生效 · 机器人说「签到失败，详见规则」被判成无法判断 · 「不是签到成功」这种带否定的话会被判错 · 机器人说「已封禁/禁止参与」被当成无法判断 · 更新下载更稳了
-
-**新增**：「未识别回复」页重做 · 机器人认不出的回复，可以教它 · 点按钮不再「点什么学什么」 · 确认新目标时，可以顺手记住「以后怎么办」 · 像签到的按钮直接学，其余才问你
+[完整更新日志 →](https://github.com/wlmosv-png/TGAutoSign/blob/master/CHANGELOG.md)
 
 [完整更新日志 →](https://github.com/wlmosv-png/TGAutoSign/blob/master/CHANGELOG.md)
 
