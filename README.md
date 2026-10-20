@@ -71,21 +71,24 @@ sha256sum TGAutoSign-*.apk                     # 比对 Release 里的 sha256sum
 
 ---
 
-## 界面一览 · Screenshots
+## 主题配色 · Themes
+
+> 内置 13 套色板，日间/夜间各一。每套在管理面板内即时切换，无需重启。
 
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/wlmosv-png/TGAutoSign@master/docs/hero-dark.png">
     <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/wlmosv-png/TGAutoSign@master/docs/hero-light.png">
-    <img src="https://cdn.jsdelivr.net/gh/wlmosv-png/TGAutoSign@master/docs/hero-light.png" alt="TGAutoSign 界面一览" width="100%">
+    <img src="https://cdn.jsdelivr.net/gh/wlmosv-png/TGAutoSign@master/docs/hero-light.png" alt="TGAutoSign · 13 套主题配色" width="100%">
   </picture>
 </p>
 
-**主面板** · **目标列表** — 截图由模块自带的 `/jmb shots` 导出，非手工截屏；目标名已替换为占位文本。
+<sub>图示为示意界面，内容均属虚构。实际以管理面板中的即时切换效果为准。</sub>
 
-**英文界面 · English UI** — 内置，无需设置，英文设备装上即是英文
+<details>
+<summary><b>各主题详细截图</b> · 主面板 / 目标列表 / 设置</summary>
 
-同一页面的暗色 / 亮色对照
+<br>
 
 | 主面板 · 暗色 | 主面板 · 亮色 |
 | --- | --- |
@@ -98,6 +101,8 @@ sha256sum TGAutoSign-*.apk                     # 比对 Release 里的 sha256sum
 | 设置 · 暗色 | 设置 · 亮色 |
 | --- | --- |
 | ![设置·暗色](https://cdn.jsdelivr.net/gh/wlmosv-png/TGAutoSign@master/docs/screenshots/shot-settings-dark.png) | ![设置·亮色](https://cdn.jsdelivr.net/gh/wlmosv-png/TGAutoSign@master/docs/screenshots/shot-settings-light.png) |
+
+</details>
 
 ## 它能做什么 · What it does
 
