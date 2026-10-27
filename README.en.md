@@ -181,6 +181,12 @@ You installed a debug build. Uninstall it, then install the official APK from th
 
 ## 更新日志 · Changelog
 
+### v1.6.9 (135) — 2026-10-28
+
+**Fixed**: sending the command was enough to mark the day as signed. · replies saying "already signed in today" were judged as failures and retried. · ads, menus, help text and account panels counted as a successful sign-in. · genuine results were discarded as advertisements. · signed targets kept showing "unrecognized". · image or sticker replies counted as success outright. · the Saved Messages digest switch did not take effect. · the unrecognized-replies page froze with a long list. · make-up sign-ins ignored the schedule window. · learned words did not take effect, or applied to the wrong target. · a bot missing from local chat data could not be added.
+
+**New**: a fixed sign-in time for individual targets. · sign-in sound. · target names are filled in automatically. · daily status summary on startup.
+
 ### v1.6.7 (133) — 2026-10-17
 
 **New**: Link self-check. · Second, independent message entry point. · Dice / animated emoji check-in. · Emoji check-in panel. · Unified chat picker. · Accept @username directly. · Command reference. · Capture mode switch. · Separate switch for Saved Messages digest. · Statistics page expansion. · Reworked check-in centre. · Account health badge. · Handbook.
@@ -189,18 +195,7 @@ You installed a debug build. Uninstall it, then install the official APK from th
 
 **Improved**: Unified handling for abnormal states. · Unified "needs attention" criteria. · Manual triggers no longer blocked incorrectly. · Cross-account copy. · Multi-account reply attribution. · UI consistency. · Fixed missing feedback for single-account signing and inflated progress denominators. · Copy and prompts.
 
-### v1.6.6 (132) — 2026-10-13
-
-**New**: AyuGram and Nnngram clients are now supported.
-
-**Improved**: Per-account settings. · Copying targets is now one step. · Smoother with multiple accounts. · App icon and description.
-
-**Fixed**: Settings now persist. · Deleting a target only affects the current account. · The target list now matches the current account.
-
 [Full changelog →](https://github.com/wlmosv-png/TGAutoSign/blob/master/CHANGELOG.md)
-
-[Full changelog →](https://github.com/wlmosv-png/TGAutoSign/blob/master/CHANGELOG.md)
-
 ## License
 
 Licensed under **GPLv3**. For personal use with your own accounts.
