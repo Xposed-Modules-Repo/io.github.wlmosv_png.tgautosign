@@ -183,9 +183,9 @@ You installed a debug build. Uninstall it, then install the official APK from th
 
 ### v1.6.9 (135) — 2026-10-28
 
-**Fixed**: sending the command was enough to mark the day as signed. · replies saying "already signed in today" were judged as failures and retried. · ads, menus, help text and account panels counted as a successful sign-in. · genuine results were discarded as advertisements. · signed targets kept showing "unrecognized". · image or sticker replies counted as success outright. · the Saved Messages digest switch did not take effect. · the unrecognized-replies page froze with a long list. · make-up sign-ins ignored the schedule window. · learned words did not take effect, or applied to the wrong target. · a bot missing from local chat data could not be added.
+**Fixed**: Signed status is written only from the bot's explicit reply. · The conclusion inside a reply takes precedence. · Ads, menus, help text and account panels do not count as sign-in results. · Genuine results are no longer discarded as advertisements. · Verdicts and list display now agree. · Image and sticker replies do not produce a sign-in result. · The Saved Messages digest switch is evaluated per account. · The unrecognized-replies page renders long lists without blocking the UI. · Make-up sign-ins follow the configured schedule window in scheduled mode. · Learned words apply at the level they are configured. · Targets can be added even when the bot is missing from local chat data.
 
-**New**: a fixed sign-in time for individual targets. · sign-in sound. · target names are filled in automatically. · daily status summary on startup.
+**New**: Added: a fixed sign-in time for individual targets. · Added: sign-in sound. · Added: target names are filled in automatically. · Added: startup daily summary.
 
 ### v1.6.7 (133) — 2026-10-17
 
@@ -196,6 +196,7 @@ You installed a debug build. Uninstall it, then install the official APK from th
 **Improved**: Unified handling for abnormal states. · Unified "needs attention" criteria. · Manual triggers no longer blocked incorrectly. · Cross-account copy. · Multi-account reply attribution. · UI consistency. · Fixed missing feedback for single-account signing and inflated progress denominators. · Copy and prompts.
 
 [Full changelog →](https://github.com/wlmosv-png/TGAutoSign/blob/master/CHANGELOG.md)
+
 ## License
 
 Licensed under **GPLv3**. For personal use with your own accounts.
