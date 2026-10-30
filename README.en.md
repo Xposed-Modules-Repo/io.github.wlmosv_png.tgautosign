@@ -181,6 +181,16 @@ You installed a debug build. Uninstall it, then install the official APK from th
 
 ## 更新日志 · Changelog
 
+### v1.7.0 (170) — 2026-10-30
+
+**Fixed**: Opening Telegram now actually triggers the missed sign-ins. · Out-of-window triggers are no longer silently dropped. · Scheduled mode no longer exits silently. · Scheduled tasks survive account switches. · The merge log is rate-limited again (60s per account). · Custom judging words now work per account. · Auto-judge / fallback mode are read per account. · The "allow" description matches the implementation.
+
+**New**: Dependent options are marked inactive when the auto-judge main switch is off. · Actionable status text in the target list.
+
+**Changed**: Out-of-window behaviour is now explicit (timer off = try on every launch; timer on = run inside the window, make up after it, queue otherwise).
+
+**Engineering**: Two new source gates (trigger chain G1–G8, judging-scope J1–J6). · 1067 unit assertions.
+
 ### v1.6.9 (135) — 2026-10-28
 
 **Fixed**: Signed status is written only from the bot's explicit reply. · The conclusion inside a reply takes precedence. · Ads, menus, help text and account panels do not count as sign-in results. · Genuine results are no longer discarded as advertisements. · Verdicts and list display now agree. · Image and sticker replies do not produce a sign-in result. · The Saved Messages digest switch is evaluated per account. · The unrecognized-replies page renders long lists without blocking the UI. · Make-up sign-ins follow the configured schedule window in scheduled mode. · Learned words apply at the level they are configured. · Targets can be added even when the bot is missing from local chat data.
