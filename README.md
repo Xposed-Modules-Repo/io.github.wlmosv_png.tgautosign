@@ -71,38 +71,33 @@ sha256sum TGAutoSign-*.apk                     # 比对 Release 里的 sha256sum
 
 ---
 
-## 主题配色 · Themes
-
-> 内置 13 套色板，日间/夜间各一。每套在管理面板内即时切换，无需重启。
+## 界面一览 · Screenshots
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/hero-dark.png">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/hero-light.png">
-    <img src="https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/hero-light.png" alt="TGAutoSign · 13 套主题配色" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/wlmosv-png/TGAutoSign@master/docs/hero-dark.png">
+    <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/wlmosv-png/TGAutoSign@master/docs/hero-light.png">
+    <img src="https://cdn.jsdelivr.net/gh/wlmosv-png/TGAutoSign@master/docs/hero-light.png" alt="TGAutoSign 界面一览" width="100%">
   </picture>
 </p>
 
-<sub>图示为示意界面，内容均属虚构。实际以管理面板中的即时切换效果为准。</sub>
+**主面板** · **目标列表** — 截图由模块自带的 `/jmb shots` 导出，非手工截屏；目标名已替换为占位文本。
 
-<details>
-<summary><b>各主题详细截图</b> · 主面板 / 目标列表 / 设置</summary>
+**英文界面 · English UI** — 内置，无需设置，英文设备装上即是英文
 
-<br>
+同一页面的暗色 / 亮色对照
 
 | 主面板 · 暗色 | 主面板 · 亮色 |
 | --- | --- |
-| ![主面板·暗色](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/shot-main-dark.png) | ![主面板·亮色](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/shot-main-light.png) |
+| ![主面板·暗色](https://cdn.jsdelivr.net/gh/wlmosv-png/TGAutoSign@master/docs/screenshots/shot-main-dark.png) | ![主面板·亮色](https://cdn.jsdelivr.net/gh/wlmosv-png/TGAutoSign@master/docs/screenshots/shot-main-light.png) |
 
 | 目标列表 · 暗色 | 目标列表 · 亮色 |
 | --- | --- |
-| ![目标列表·暗色](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/shot-targets-dark.png) | ![目标列表·亮色](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/shot-targets-light.png) |
+| ![目标列表·暗色](https://cdn.jsdelivr.net/gh/wlmosv-png/TGAutoSign@master/docs/screenshots/shot-targets-dark.png) | ![目标列表·亮色](https://cdn.jsdelivr.net/gh/wlmosv-png/TGAutoSign@master/docs/screenshots/shot-targets-light.png) |
 
 | 设置 · 暗色 | 设置 · 亮色 |
 | --- | --- |
-| ![设置·暗色](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/shot-settings-dark.png) | ![设置·亮色](https://raw.githubusercontent.com/wlmosv-png/TGAutoSign/master/docs/screenshots/shot-settings-light.png) |
-
-</details>
+| ![设置·暗色](https://cdn.jsdelivr.net/gh/wlmosv-png/TGAutoSign@master/docs/screenshots/shot-settings-dark.png) | ![设置·亮色](https://cdn.jsdelivr.net/gh/wlmosv-png/TGAutoSign@master/docs/screenshots/shot-settings-light.png) |
 
 ## 它能做什么 · What it does
 
@@ -130,8 +125,8 @@ sha256sum TGAutoSign-*.apk                     # 比对 Release 里的 sha256sum
 
 | 客户端 · Client | 包名 · Package | 状态 · Status |
 | --- | --- | --- |
-| Telegram（Play / 默认渠道）| `org.telegram.messenger` | ✅ 13.0.1 实测 · *tested* |
-| Telegram（官网直连版）| `org.telegram.messenger.web` | ✅ 实测 · *tested* |
+| Telegram（Play / 默认渠道）| `org.telegram.messenger` | ✅ 13.1.1 实测 · **13.2.0 已适配** · *tested on 13.1.1; 13.2.0 adapted* |
+| Telegram（官网直连版）| `org.telegram.messenger.web` | ✅ 实测 · **13.2.0 已适配** · *tested; 13.2.0 adapted* |
 | Nagram（NextAlone）| `xyz.nextalone.nagram` | ✅ 12.10.3 实测 · *tested* |
 | Nagram XF | `fork.risin42.nagramx` | ✅ 实测 · *tested* |
 | ExteraLess | `com.exteraless.app` | ✅ 12.10.5 实测 · *tested* |
@@ -142,6 +137,9 @@ sha256sum TGAutoSign-*.apk                     # 比对 Release 里的 sha256sum
 | Nagram / NagramX / NagramNX | `nu.gpu.nagram` 等 | ✅ 实测 · *tested* |
 | 其它 Telegram-Android fork | 任意 | 标志类齐全即注入 · *injects if flags intact* |
 | Telegram X | — | ❌ 不注入（换内核）· *not injected* |
+
+**版本适配说明 · Version adaptation**：Telegram **13.2.0** 起 R8 不再保留 `org.telegram.messenger.*` 的类名（官方混淆规则删除了整包 keep），过去「按原名反射」的取数方式会整条失效。模块内置**宿主符号解析层**：旧版仍按原名直查（13.1.1 及更早、以及所有不混淆的第三方 fork 行为逐字不变），新版按结构指纹与版本映射解析，并对映射结果做结构校验 —— 校验不过就明确报「宿主版本未适配」并只保留 `/jmb` 命令与按钮学习，绝不假装适配成功。
+*Since Telegram **13.2.0**, R8 no longer keeps `org.telegram.messenger.*` class names. The module ships a host-symbol resolution layer: legacy clients still resolve by original names (13.1.1 and older, plus all non-obfuscated forks, behave exactly as before); new builds resolve by structural fingerprints and a version map, and every mapped class is structurally verified. If verification fails the module reports "host version not supported" and keeps only the `/jmb` commands and button learning — it never fakes a successful adaptation.*
 
 > ⚠️ **作用域 · Scope**：LSPosed 里默认只勾了官方版。用第三方客户端，请把**对应客户端**也勾进模块作用域。
 > *LSPosed enables only the official client by default. Using a third-party client? Tick **that** client in scope too.*
@@ -204,29 +202,25 @@ sha256sum TGAutoSign-*.apk                     # 比对 Release 里的 sha256sum
 
 ## 更新日志 · Changelog
 
-### v1.7.0 (170) — 2026-10-30
+### v1.7.2 (172) — 2026-11-13
 
-**修复**：打开 TG 时自动补签真正生效 · 窗口外不再一律丢弃 · 定时模式不再静默早退 · 定时任务不再因切换账号被丢弃 · 合并日志恢复限频 · 多账号自定义词真正生效 · 判定总闸与兜底档按账号读取 · 「放行」说明与实现一致
+**新增**：宿主符号运行时自愈 · 符号解析失败时输出明确状态
 
-**新增**：自动判定总闸关闭时的界面提示 · 列表状态给出行动指引
+**修复**：APK 条目未对齐导致 Android 11+ 拒绝安装 · 判定命中改取最强匹配，不再由词表顺序决定 · 文档类措辞不再吞掉明确结论 · 跨天状态泄漏导致目标被永久钉死 · 面板公告与额度判断的边界收紧
 
-**变更**：窗口外策略明确化（定时关＝任何时间上线都尝试；定时开＝窗口内执行、窗口后补签、其余排队）
+### v1.7.1 (171) — 2026-11-01
 
-**工程**：新增触发链 G1–G8 与判定链 J1–J6 两道门禁 · 单测 1067 项
+**修复**：目标固定时刻不再被全局窗口旁路 · 心跳不再绕过签到门禁 · 补签时段起点按目标时刻计算 · 面板公告不再被误判为签到失败 · 真失败句仍判失败
 
-### v1.6.9 (135) — 2026-10-28
+**新增**：手动撤销「今日已签」
 
-**修复**：已签状态以 bot 回复为依据 · 同一条回复内以结论为准 · 非结果内容不参与判定 · 结果与推广分开识别 · 判定结果与列表显示一致 · 图片、贴纸类回复不产生签到结论 · 收藏夹摘要开关按账号生效 · 「未识别」页面长列表渲染 · 定时模式下的补签时间窗口 · 学习词条按层级生效 · 本地无该 bot 记录时仍可添加目标
+**修复**：已有成功结论后，自动判定不再翻转它 · 已签目标不再进「未识别回复」池 · 撤销已签时同步清掉签到时刻 · 状态撕裂自愈 · 撤销动作全部留痕
 
-**新增**：单目标固定签到时刻 · 签到音效 · 目标名称补全 · 开屏当日状态摘要
+**修复**：命令式重复提示现在直接判为已签
 
-### v1.6.7 (133) — 2026-10-17
+**界面**：撤销入口重做：一行一个「撤销」，点开再选 · 新增「已暂停」列表 —— 暂停不再等于消失 · 条目操作菜单显示真实状态 · 「标记为未签」也进了条目操作菜单
 
-**新增**：链路自检（全部功能 → 调试 → 自诊断 顶部） · 第二条独立消息入口（锚点 B） · 「从不应答」状态单列 · 动态表情（骰子）签到 · emoji 签到面板（全部功能 → 配置 → emoji 签到） · 统一会话选择器 · 支持直接填写 @用户名 · 命令速查（`/jmb help` 手册第 4.5 章） · 捕捉模式开关 · 「收藏夹摘要」独立开关（设置 → 通知） · 统计页扩充 · 签到中心改版（账号一览） · 账号健康度徽章 · 使用手册（12 章）
-
-**修复**：bot 已回复但判定不出、状态长期停在「已发出」 · 按钮回应中的答案被误读 · 按钮反复失效后状态残留「已发出」 · 已签目标半小时内仍被判为「在等结论」 · 按钮型目标收到图片或贴纸被误报「回复判不出」 · 命令菜单被误判为签到结果 · 目标列表末尾无法滚动到底 · 全部目标显示「已发出 4999 分钟仍未结案」 · 模块自身发出的指令被收进「待添加」 · 点击入口后整个面板消失 · 定时日志与实际执行时间不符 · 纯表情口令在群聊中无法学习 · 添加目标后弹出「已发起签到」 · 宽松模式下非签到回复被判成功
-
-**优化**：错误处置统一收敛 · 需处理口径统一 · 手动触发的闸门修正 · 跨账号复制 · 多账号回复判定 · 界面一致性 · 单账号签到无反馈、进度分母虚高 · 文案与提示语
+**工程**：补签判据新增目标维度重载 · 门禁补入触发策略测试 · 13 条真阳性用例
 
 [完整更新日志 →](https://github.com/wlmosv-png/TGAutoSign/blob/master/CHANGELOG.md)
 

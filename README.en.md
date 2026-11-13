@@ -121,8 +121,8 @@ The module matches by host package first, then falls back to flag-class capabili
 
 | Client | Package | Status |
 | --- | --- | --- |
-| Telegram (Play / default) | `org.telegram.messenger` | ✅ tested on 13.0.1 |
-| Telegram (direct APK) | `org.telegram.messenger.web` | ✅ tested |
+| Telegram (Play / default) | `org.telegram.messenger` | ✅ tested on 13.1.1; **13.2.0 adapted** |
+| Telegram (direct APK) | `org.telegram.messenger.web` | ✅ tested; **13.2.0 adapted** |
 | Nagram (NextAlone) | `xyz.nextalone.nagram` | ✅ tested on 12.10.3 |
 | Nagram XF | `fork.risin42.nagramx` | ✅ tested |
 | ExteraLess (ExteraGram fork) | `com.exteraless.app` | ✅ tested on 12.10.5 |
@@ -134,7 +134,9 @@ The module matches by host package first, then falls back to flag-class capabili
 | Other Telegram-Android forks | any | injects if flag classes are intact |
 | Telegram X | — | ❌ not injected (different core) |
 
-Adapted for the whole Telegram **12.10.x / 13.0.x** line.
+**Version adaptation** — since Telegram **13.2.0**, R8 no longer keeps `org.telegram.messenger.*` class names (the whole-package keep rule was removed), which used to break every name-based reflection path at once. The module now carries a **host-symbol resolution layer**: legacy clients still resolve by original names (13.1.1 and older, plus all non-obfuscated forks, behave exactly as before), while new builds resolve by structural fingerprints plus a version map, and every mapped class is structurally verified. If verification fails the module reports "host version not supported" and keeps only `/jmb` commands and button learning — it never reports a fake success.
+
+Adapted for the whole Telegram **12.10.x / 13.0.x / 13.1.x** line, and **13.2.0+**.
 
 > ⚠️ **Scope**: LSPosed only enables the official client by default. If you use a third-party client, tick **that client** in the module's scope as well.
 
@@ -181,29 +183,23 @@ You installed a debug build. Uninstall it, then install the official APK from th
 
 ## 更新日志 · Changelog
 
-### v1.7.0 (170) — 2026-10-30
+### v1.7.2 (172) — 2026-11-13
 
-**Fixed**: Opening Telegram now actually triggers the missed sign-ins. · Out-of-window triggers are no longer silently dropped. · Scheduled mode no longer exits silently. · Scheduled tasks survive account switches. · The merge log is rate-limited again (60s per account). · Custom judging words now work per account. · Auto-judge / fallback mode are read per account. · The "allow" description matches the implementation.
+**New**: Runtime self-healing of host symbols. · Explicit status when symbol resolution fails.
 
-**New**: Dependent options are marked inactive when the auto-judge main switch is off. · Actionable status text in the target list.
+**Fixed**: Fixed misaligned APK entries that made Android 11+ reject installation. · Verdicts now take the strongest match instead of the first one in the word list. · Documentation wording no longer swallows an explicit verdict. · Fixed a cross-day state leak that could pin a target permanently. · Tightened verdict boundaries for panel announcements and quota wording.
 
-**Changed**: Out-of-window behaviour is now explicit (timer off = try on every launch; timer on = run inside the window, make up after it, queue otherwise).
+### v1.7.1 (171) — 2026-11-01
 
-**Engineering**: Two new source gates (trigger chain G1–G8, judging-scope J1–J6). · 1067 unit assertions.
+**Fixed**: A target's fixed time is no longer bypassed by an all-day global window. · The heartbeat path no longer bypasses the sign-in gate. · The make-up window start is computed per target. · Account panels are no longer misread as sign-in failures. · Genuine rejections are still treated as failures.
 
-### v1.6.9 (135) — 2026-10-28
+**New**: Mark a target as "not signed" again by hand.
 
-**Fixed**: Signed status is written only from the bot's explicit reply. · The conclusion inside a reply takes precedence. · Ads, menus, help text and account panels do not count as sign-in results. · Genuine results are no longer discarded as advertisements. · Verdicts and list display now agree. · Image and sticker replies do not produce a sign-in result. · The Saved Messages digest switch is evaluated per account. · The unrecognized-replies page renders long lists without blocking the UI. · Make-up sign-ins follow the configured schedule window in scheduled mode. · Learned words apply at the level they are configured. · Targets can be added even when the bot is missing from local chat data.
+**Fixed**: Once a target is signed today, automatic verdicts no longer flip it. · Signed targets no longer enter the unrecognized-reply pool. · Revoking a sign-in now clears the signed timestamp too. · Self-heal for a torn signed state. · Every revocation is now logged with its reason.
 
-**New**: Added: a fixed sign-in time for individual targets. · Added: sign-in sound. · Added: target names are filled in automatically. · Added: startup daily summary.
+**UI**: The undo entry is now one compact row per target. · New "Paused" section: pausing no longer hides a target. · The entry menu now shows the actual state instead of a static label.
 
-### v1.6.7 (133) — 2026-10-17
-
-**New**: Link self-check. · Second, independent message entry point. · Dice / animated emoji check-in. · Emoji check-in panel. · Unified chat picker. · Accept @username directly. · Command reference. · Capture mode switch. · Separate switch for Saved Messages digest. · Statistics page expansion. · Reworked check-in centre. · Account health badge. · Handbook.
-
-**Fixed**: Fixed replies that were received but never judged. · Fixed misreading the answer from callback responses. · Fixed "sent" marker lingering after repeated stale-button failures. · Fixed stale "sent" marker persisting after a successful check-in. · Image-only replies no longer reported as unreadable. · Command menus no longer treated as results. · Fixed the last row of the target list being unreachable. · Fixed all targets appearing stuck with an absurd elapsed time. · Fixed self-sent commands being learned as new candidates. · Fixed the whole panel closing after using the chat picker. · Fixed misleading timer log wording. · Fixed pure-emoji commands not being learned in groups. · Removed redundant toast when adding a target. · Loose mode no longer accepts replies for targets not sent today.
-
-**Improved**: Unified handling for abnormal states. · Unified "needs attention" criteria. · Manual triggers no longer blocked incorrectly. · Cross-account copy. · Multi-account reply attribution. · UI consistency. · Fixed missing feedback for single-account signing and inflated progress denominators. · Copy and prompts.
+**工程**: The make-up predicate gains a target-scoped overload. · The trigger-policy test is now part of the gate.
 
 [Full changelog →](https://github.com/wlmosv-png/TGAutoSign/blob/master/CHANGELOG.md)
 
